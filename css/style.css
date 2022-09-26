@@ -34,7 +34,7 @@
   margin: auto;
   background-size: cover;
   background-position: center;
-  background-image: url(../css/img/teatwo.jpg);
+  background-image: url(./css/img/teatwo.jpg);
   max-width: 97%;
   height: 100vh;
 }
