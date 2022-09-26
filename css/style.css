@@ -198,6 +198,7 @@
   height: 90px;
   position: absolute;
   border-radius: 100%;
+  transition: opacity 0.3s;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn img {
   width: 100%;
