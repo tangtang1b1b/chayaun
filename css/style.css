@@ -566,7 +566,7 @@
 .flavor_row .flavor_container .flavor_content .flavor_kind {
   width: 100%;
   height: 100%;
-  background-image: url(./img/tea.jpg);
+  background-image: url(../img/tea.jpg);
   background-size: 350%;
   background-position: center;
 }
