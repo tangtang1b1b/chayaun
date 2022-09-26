@@ -41,12 +41,12 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   position: absolute;
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 40%;
   left: 50%;
   transform: translateX(-50%);
 }
 .nav_box .nav_bar .list_group .list_item {
-  padding: 10px 0px;
+  padding: 10px 5px;
   cursor: pointer;
 }
 .nav_box .nav_bar .list_group .list_item a {
