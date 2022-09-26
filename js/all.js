@@ -17,7 +17,8 @@ $(window).on("mousemove",function(e){
     let pageY = e.pageY;
     let x = pageX-$("#special_group").offset().left;
     let y = pageY-$("#special_group").offset().top;
-    if(y<0 && y>$("#special_group").Height()){
+    if(y<0 || x<0 || y>$("#special_group").outerHeight() || x>$("#special_group").outerHeight()){
+        $("#followbtn").css("opacity","0");
     }else{
         $("#followbtn").css("opacity","1");
     }  

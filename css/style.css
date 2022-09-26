@@ -1,3 +1,7 @@
+* {
+  outline: solid 1px;
+}
+
 .banner_row {
   width: 100%;
   margin: auto;
@@ -214,7 +218,7 @@
   height: 400px;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .tea_img {
-  border-radius: 15px;
+  border-radius: 10px;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -353,7 +357,7 @@
   width: 100%;
 }
 .artisan_row .artisan_photo .artisan_photo_content img {
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .artisan_row .artisan_inner_box {
   display: flex;
