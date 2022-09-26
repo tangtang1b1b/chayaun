@@ -1,0 +1,246 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/reset.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js") 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js") 
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel="icon", href="/img/icon.ico")
+        title 茶苑CHAYUAN
+    body 
+        //- 導覽列
+        header.nav_box
+            nav.nav_bar  
+                h1
+                    a.header_logo(href="/01/dist/index.html")  
+                        img(src="/img/logo.svg", alt="CHAYUAN")
+                ul.list_group 
+                    li.list_item 
+                        a(href="/dist/indexshop.html") 線上商城
+                    li.list_item 
+                        a(href="#") 茶葉周邊
+                    li.list_item 
+                        a(href="#") 特色風味
+                    li.list_item 
+                        a(href="#") 最新消息
+                    li.list_item 
+                        a(href="#") 關於茶苑
+                ul.icon_group
+                    li.icon_item.icon_serach
+                        form.search(action="") 
+                            .search_area
+                                label.bigmirror.i.fa-solid.fa-magnifying-glass(for="click")
+                                    .inputbox 
+                                        input.barbar(type="search" placeholder="找商品")
+                                        .mask
+                    li.icon_item
+                        a(href="#")
+                            span.material-symbols-outlined shopping_cart 
+                    li.icon_item 
+                        a(href="#")
+                            i.fa-regular.fa-user
+        //- 第一區塊
+        section.banner_row 
+            a#totop(href="#") 
+                img(src="/img/scroll2.svg", alt="")
+            .banner_outter 
+                .banner_inner_box
+                    .banner_inner
+                        p.main_new 最新產品
+                        h2.main_pro PRODUCTS
+                        a.read_more(href="#")  
+                            .read_more_text 
+                                p View More
+                            span.read_go 
+                                img.key_item(src="/img/scroll.svg", alt="")
+        //- 第二區塊
+        section.derivative_row 
+            .derivative_inner_box
+                .derivative_title
+                    .derivative_title_inner
+                        p.main_new 茶葉周邊
+                        h2 SPECIAL
+                .derivative_number
+                    .derivative_number_inner
+                        .derivative_number_var 01
+                        .derivative_number_bar /
+                        .derivative_number_total 05
+                .derivative_container
+                    ul#special_group.derivative_group
+                        #followbtn
+                            img(src="/img/lr.svg", alt="")
+                        li.derivative_list 
+                            a.derivative_list_card(href="#") 
+                                figure.product_else 
+                                    img.tea_img(src="https://fakeimg.pl/400x400/C00CCC", alt="")
+                                    figcaption.tea_img_name 
+                                        h3 陶瓷工藝茶壺
+                        li.derivative_list 
+                            a.derivative_list_card(href="#") 
+                                figure.product_else 
+                                    img.tea_img(src="https://fakeimg.pl/400x400/C00CCC", alt="")
+                                    figcaption.tea_img_name 
+                                        h3 茶香手工皂
+                        li.derivative_list 
+                            a.derivative_list_card(href="#") 
+                                figure.product_else 
+                                    img.tea_img(src="https://fakeimg.pl/400x400/C00CCC", alt="")
+                                    figcaption.tea_img_name 
+                                        h3 茉莉花茶巧克力
+                        li.derivative_list 
+                            a.derivative_list_card(href="#") 
+                                figure.product_else 
+                                    img.tea_img(src="https://fakeimg.pl/400x400/C00CCC", alt="")
+                                    figcaption.tea_img_name 
+                                        h3 茉莉花茶巧克力
+                        li.derivative_list 
+                            a.derivative_list_card(href="#") 
+                                figure.product_else 
+                                    img.tea_img(src="https://fakeimg.pl/400x400/C00CCC", alt="")
+                                    figcaption.tea_img_name 
+                                        h3 茉莉花茶巧克力
+                        li.derivative_list 
+                            a.derivative_list_card(href="#") 
+                                figure.product_else 
+                                    img.tea_img(src="https://fakeimg.pl/400x400/C00CCC", alt="")
+                                    figcaption.tea_img_name 
+                                        h3 茉莉花茶巧克力
+                .read
+                    .read_inner 
+                        a.read_more(href="#")  
+                            .read_more_text 
+                                p View More
+                                p View More
+                            span.read_go 
+                                img.key_item(src="/img/scroll2.svg", alt="")   
+        //- 第三區塊
+        section.artisan_row 
+            .artisan_photo
+                .artisan_photo_item
+                    figure.artisan_photo_content
+                        img(src="https://fakeimg.pl/400x500/C00CCC", alt="")
+                .artisan_photo_item
+                    figure.artisan_photo_content 
+                        img(src="https://fakeimg.pl/400x500/C00CCC", alt="")
+            .artisan_inner_box
+                .artisan_title
+                    .artisan_title_inner
+                        p.main_new 職人故事
+                        h2 ARTISANS
+                .artisan_container
+                    h3 親見
+                        strong 職人
+                        |的<br>
+                        span 工藝
+                    p 除了探索茶葉，也花了非常多時間和金錢探索茶壺，但茶壺的學問深似海，只知道好的朱泥壺，確實能夠對台灣茶風味加不少分，不知道的是失傳的技術以及背後所帶著的回憶。
+                .read
+                    .read_inner 
+                        a.read_more(href="#")  
+                            .read_more_text 
+                                p View More
+                                p View More
+                            span.read_go 
+                                img.key_item(src="/img/scroll2.svg", alt="")                     
+        //- 第四區塊
+        section.flavor_row 
+            .flavor_inner
+                .flavor_inner_box
+                    .flavor_title
+                        .flavor_title_inner
+                            p.main_new 特色風味
+                            h2.main_pro FLAVOR
+                            p.flavor_title_cli Click here<br>to find
+                            a.read_more(href="#")  
+                                .read_more_text 
+                                    p.read_more_view View More
+                                    p.read_more_view View More
+                                span.read_go 
+                                    img.key_item(src="/img/scroll2w.svg", alt="")
+
+            .flavor_container
+                a.flavor_content.one(href="#") 
+                    .flavor_kind 
+                a.flavor_content.two(href="#")
+                    .flavor_kind 
+                a.flavor_content.thr(href="#") 
+                    .flavor_kind 
+        //- 第五區塊
+        section.newsletter_row 
+            .newsletter_inner_box
+                .newsletter_inner
+                    p.main_new 最新消息
+                    h2.main_pro NEWSLETTER
+                .newsletter_ask
+                    .newsletter_ask_content 
+                        p.newsletter_ask_about Want to know latest news about CHAYUAN?<br>Enter your e-mail here! 
+                        form.newsletter_send(action="")
+                            input#newsmail(type="email" placeholder="Enter your e-mail address")
+                            button.newsletter_cli(type="submit")
+                                i.fa-solid.fa-envelope
+        //- 頁尾
+        section.fake_foot_row
+        footer.foot_row
+            .foot_inner_box
+                .foot_inner_top
+                    .foot_inner
+                        h2.main_pro 茶苑CHAYUAN
+                    .foot_nav
+                        ul.foot_nav_group
+                            li.foot_nav_list 
+                                a(href="") 首頁
+                            li.foot_nav_list 
+                                a(href="") 線上商城
+                            li.foot_nav_list 
+                                a(href="") 茶葉周邊
+                            li.foot_nav_list 
+                                a(href="") 特色風味
+                            li.foot_nav_list 
+                                a(href="") 最新消息
+                            li.foot_nav_list 
+                                a(href="") 關於茶苑
+                    .foot_ask
+                        .foot_ask_main 
+                            .foot_address 
+                                p cometobuysometea@gmail.com
+                                p +886-2-8712-7414
+                                p 週一至週五 2PM - 5PM
+
+                            h3.foot_title 官方帳號
+                            .foot_contact  
+                                ul.foot_contact_grop
+                                    li.foot_contact_list
+                                        a(href="")  
+                                            i.fa-brands.fa-instagram
+                                    li.foot_contact_list
+                                        a(href="")  
+                                            i.fa-brands.fa-facebook
+                                    li.foot_contact_list
+                                        a(href="")  
+                                            i.fa-brands.fa-twitter
+                                    li.foot_contact_list
+                                        a(href="")  
+                                            i.fa-brands.fa-line
+                .foot_inner_down 
+                    .foot_company
+                        .foot_know
+                            ul.foot_know_group
+                                li.foot_know_list 
+                                    a(href="") 隱私政策
+                                li.foot_know_list 
+                                    a(href="") 服務條款
+                                li.foot_know_list 
+                                    a(href="") 活動快訊
+                                li.foot_know_list 
+                                    a(href="") 常見問題
+                                li.foot_know_list 
+                                    a(href="") 檢舉專區
+                    .foot_tibame 
+                        p 本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。<br>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。<br>COPYRIGHT © 2022 CHAYUAN Co.,Ltd. All rights reserved.
+
+        script(src="/all.js") 
