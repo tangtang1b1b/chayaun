@@ -6,33 +6,6 @@
   background-position: center;
   background-image: url(../img/teatwo.jpg);
 }
-.banner_row #totop {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  position: fixed;
-  z-index: 1;
-  width: 15px;
-  height: 15px;
-  background-color: #fafafa;
-  transform: rotate(-90deg);
-  right: 2%;
-  bottom: 12%;
-  padding: 15px;
-  border-radius: 100%;
-  border: solid 1px rgba(51, 51, 51, 0.2);
-  transition: 0.3s;
-  opacity: 0;
-}
-.banner_row #totop:hover {
-  background-color: #dcdcdc;
-}
-.banner_row #totop img {
-  width: 100%;
-  height: 100%;
-}
 .banner_row .banner_inner_box {
   position: relative;
   max-width: 1200px;

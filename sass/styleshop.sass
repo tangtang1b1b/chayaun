@@ -2,15 +2,42 @@ $color_main:#2A9D8F
 $color_white:#fafafa
 $color_black:#333
 $color_gray:#666
+$color_green:#00A26A
     
  
 *
     // outline: solid 1px 
 
-.nav_box
-    & .nav_bar
-        & .header_logo
-            & img
-        & .list_group
-            & .list_item:nth-child(1) a
-                border-bottom: solid 1px rgba($color_main,0.5)
+body
+    // padding-top: 500px
+    // padding-top: 600px
+
+
+.list_item:nth-child(1) a
+    border-bottom: solid 2px rgba($color_main,0.3)
+.first_img
+    width: 100%
+    height: 500px
+    background-image: url(../img/30.jpg)
+    background-size: cover 
+    background-position: bottom
+    background-attachment: fixed
+.title_area
+    width: 100%
+    margin-top: 100px
+    & h2
+        position: relative
+        max-width: 1200px
+        margin: auto 
+        font-size: 48px
+        color: $color_black
+    & h2::before
+        content: ""
+        position: absolute
+        width: 30px
+        height: 15px
+        background-color: $color_green
+        top: 0
+        bottom: 0
+        left: -40px
+        margin: auto
