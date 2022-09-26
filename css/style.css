@@ -2,7 +2,9 @@
   width: 100%;
   margin: auto;
   height: 100vh;
-  background-color: #fafafa;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/teatwo.jpg);
 }
 .banner_row #totop {
   -webkit-user-select: none;
@@ -30,14 +32,6 @@
 .banner_row #totop img {
   width: 100%;
   height: 100%;
-}
-.banner_row .banner_outter {
-  margin: auto;
-  background-size: cover;
-  background-position: center;
-  background-image: url(../img/teatwo.jpg);
-  max-width: 97%;
-  height: 100vh;
 }
 .banner_row .banner_inner_box {
   position: relative;
