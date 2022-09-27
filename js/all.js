@@ -1,6 +1,6 @@
 $(window).on("scroll",function(e){
     if($(window).scrollTop()>300){
-        $(".nav_box").css("box-shadow","0px 0px 15px 0px #dcdcdc");
+        $(".nav_box").css("box-shadow","0px 0px 5px 0px #BBB");
         $("#totop").css("opacity","1");
     }else{
         $(".nav_box").css("box-shadow","none");
