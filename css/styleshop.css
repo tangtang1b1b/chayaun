@@ -156,6 +156,27 @@
   margin-bottom: 30px;
   padding: 5px;
 }
+.product_area .container_product_area .content_buy .content_buy_area li .buy_item .shopcar {
+  transition: 0.3s;
+  z-index: 1;
+  opacity: 0;
+  width: 60%;
+  text-align: center;
+  padding: 15px 10px;
+  bottom: 25%;
+  left: 50%;
+  font-size: 18px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  background-color: #2A9D8F;
+  color: #fafafa;
+}
+.product_area .container_product_area .content_buy .content_buy_area li .buy_item .shopcar:hover {
+  -webkit-animation: updown 1s infinite;
+          animation: updown 1s infinite;
+}
 .product_area .container_product_area .content_buy .content_buy_area li .buy_item a {
   text-decoration: none;
   color: #333;
@@ -166,6 +187,7 @@
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.3s;
 }
 .product_area .container_product_area .content_buy .content_buy_area li .buy_item a p {
   line-height: 20px;
@@ -175,7 +197,14 @@
 }
 .product_area .container_product_area .content_buy .content_buy_area li .buy_item a .proname {
   font-size: 14px;
-  color: rgba(51, 51, 51, 0.8);
+  color: rgba(51, 51, 51, 0.7);
+}
+.product_area .container_product_area .content_buy .content_buy_area li .buy_item:hover .shopcar {
+  opacity: 1;
+  bottom: 30%;
+}
+.product_area .container_product_area .content_buy .content_buy_area li .buy_item:hover img {
+  filter: brightness(0.8);
 }
 .product_area .container_product_area .content_buy .content_buy_area li .buy_item::before, .product_area .container_product_area .content_buy .content_buy_area li .buy_item::after {
   content: "";
@@ -201,6 +230,28 @@
   width: calc(100% + 9px);
   height: calc(100% + 9px);
   border-radius: 5px;
+}
+@-webkit-keyframes updown {
+  0% {
+    transform: translateX(-50%) translateY(0%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-5%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%);
+  }
+}
+@keyframes updown {
+  0% {
+    transform: translateX(-50%) translateY(0%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-5%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%);
+  }
 }
 .product_area .container_product_area .content_buy .container_page {
   max-width: 33.333333%;
