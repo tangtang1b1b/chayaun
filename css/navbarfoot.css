@@ -239,9 +239,6 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list a:hover {
     color: rgba(250, 250, 250, 0.5);
   }
-  .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(1) a {
-    color: rgba(250, 250, 250, 0.5);
-  }
   .foot_row .foot_inner_box .foot_inner_top .foot_ask {
     height: 100%;
     width: 33.333333%;

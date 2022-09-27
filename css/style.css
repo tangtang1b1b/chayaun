@@ -696,3 +696,7 @@
 .newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_send .newsletter_cli i:hover {
   transform: scale(1.2);
 }
+
+.foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(1) a {
+  color: rgba(250, 250, 250, 0.5);
+}

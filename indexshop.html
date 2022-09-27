@@ -58,7 +58,13 @@
       <div class="container_type_area"> 
         <h3>分類</h3>
         <div class="find">
-          <p>商品排序</p>
+          <p class="sert_big">商品排序</p>
+          <ul class="sert_group">
+            <li class="sert_list">上架時間:由新至舊</li>
+            <li class="sert_list">上架時間:由舊至新</li>
+            <li class="sert_list">價格:由高至低</li>
+            <li class="sert_list">價格:由低至高</li>
+          </ul>
           <i class="fa-solid fa-chevron-up"></i>
         </div>
       </div>
@@ -69,12 +75,14 @@
           <ul class="choose_group">
             <li class="choose_item">
               <a href="">【本月特選優惠】</a>
+              <i class="fa-solid fa-chevron-up"></i>
             </li>
             <li class="choose_item">
               <a href="">【熱銷組合】</a>
             </li>
             <li class="choose_item">
               <a href="">【禮盒、禮品推薦】</a>
+              <i class="fa-solid fa-chevron-up"></i>
             </li>
             <li class="choose_item">
               <a href="">【風味推薦】</a>
@@ -87,8 +95,7 @@
             </li>
           </ul>
         </div>
-        <div class="content_buy">
-          <!-- <div class="content_buy_area"> -->
+        <div id="buy" class="content_buy">
           <ul class="content_buy_area">
             <li>
               <div class="buy_item">
@@ -173,23 +180,23 @@
             </li>
           </ul>
           <div class="container_page">
-            <div class="page_line">
-              <img src="img/scroll2.svg" alt="">
-            </div>
+            <a class="page_line" href="#buy">
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
             <ul class="pagenum_group">
               <li class="pagenum_list">
-                <a href="">1</a>
+                <a href="#buy">1</a>
               </li>
               <li class="pagenum_list">
-                <a href="">2</a>
+                <a href="#buy">2</a>
               </li>
               <li class="pagenum_list">
-                <a href="">3</a>
+                <a href="#buy">3</a>
               </li>
             </ul>
-            <div class="page_line">
-              <img src="img/scroll2.svg" alt="">
-            </div>
+            <a class="page_line" href="#buy">
+              <i class="fa-solid fa-chevron-up"></i>
+            </a>
           </div>
         </div>
       </div>
