@@ -556,7 +556,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: 0.5s;
   font-size: 36px;
@@ -579,7 +579,6 @@
 }
 .flavor_row .flavor_container .flavor_content:nth-child(1):hover .word {
   opacity: 1;
-  transform: translate(-50%, -50%);
 }
 .flavor_row .flavor_container .flavor_content:nth-child(2):hover {
   flex-grow: 3;
@@ -587,7 +586,6 @@
 }
 .flavor_row .flavor_container .flavor_content:nth-child(2):hover .word {
   opacity: 1;
-  transform: translate(-50%, -50%);
 }
 .flavor_row .flavor_container .flavor_content:nth-child(3):hover {
   flex-grow: 3;
@@ -595,7 +593,6 @@
 }
 .flavor_row .flavor_container .flavor_content:nth-child(3):hover .word {
   opacity: 1;
-  transform: translate(-50%, -50%);
 }
 @-webkit-keyframes rightscale {
   0% {
