@@ -172,6 +172,7 @@
   position: absolute;
   border-radius: 100%;
   transition: opacity 0.3s;
+  pointer-events: none;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn img {
   width: 100%;
@@ -190,6 +191,11 @@
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .tea_img {
   border-radius: 10px;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 80%;
+     object-position: center 80%;
   margin-bottom: 30px;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .tea_img_name {
@@ -324,10 +330,15 @@
   left: 28%;
 }
 .artisan_row .artisan_photo .artisan_photo_content {
-  width: 100%;
+  width: 400px;
+  height: 500px;
 }
 .artisan_row .artisan_photo .artisan_photo_content img {
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .artisan_row .artisan_inner_box {
   display: flex;
@@ -523,6 +534,7 @@
   display: flex;
 }
 .flavor_row .flavor_container .flavor_content {
+  position: relative;
   width: 15vw;
   background-color: #ccc;
   height: 100%;
@@ -530,22 +542,60 @@
   transition: 0.5s;
   transform-origin: bottom;
   overflow: hidden;
+  text-decoration: none;
+  color: #fafafa;
 }
 .flavor_row .flavor_container .flavor_content .flavor_kind {
   width: 100%;
   height: 100%;
-  background-image: url(../img/teatwo.jpg);
-  background-size: 350%;
+  background-size: 160%;
   background-position: center;
+  transition: 0.5s;
 }
-.flavor_row .flavor_container .flavor_content.one:hover {
-  flex-grow: 2;
+.flavor_row .flavor_container .flavor_content .word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 36px;
 }
-.flavor_row .flavor_container .flavor_content.two:hover {
-  flex-grow: 2;
+.flavor_row .flavor_container .flavor_content .flavor_kind.little {
+  background-image: url(../img/44.jpg);
 }
-.flavor_row .flavor_container .flavor_content.thr:hover {
-  flex-grow: 2;
+.flavor_row .flavor_container .flavor_content .flavor_kind.strong {
+  background-image: url(../img/39.png);
+}
+.flavor_row .flavor_container .flavor_content .flavor_kind.old {
+  background-image: url(../img/43.jpg);
+}
+.flavor_row .flavor_container .flavor_content .flavor_kind:hover {
+  filter: brightness(0.5);
+}
+.flavor_row .flavor_container .flavor_content:nth-child(1):hover {
+  flex-grow: 3;
+  background-size: 170%;
+}
+.flavor_row .flavor_container .flavor_content:nth-child(1):hover .word {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.flavor_row .flavor_container .flavor_content:nth-child(2):hover {
+  flex-grow: 3;
+  background-size: 170%;
+}
+.flavor_row .flavor_container .flavor_content:nth-child(2):hover .word {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.flavor_row .flavor_container .flavor_content:nth-child(3):hover {
+  flex-grow: 3;
+  background-size: 170%;
+}
+.flavor_row .flavor_container .flavor_content:nth-child(3):hover .word {
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 @-webkit-keyframes rightscale {
   0% {

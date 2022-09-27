@@ -149,6 +149,7 @@ $color_green:#00A26A
                     position: absolute
                     border-radius: 100%
                     transition: opacity 0.3s
+                    pointer-events: none
                     & img
                         width: 100%
                 & .derivative_list
@@ -162,6 +163,9 @@ $color_green:#00A26A
                     & .tea_img
                         border-radius: 10px
                         width: 100%
+                        height: 100%
+                        object-fit: cover
+                        object-position: center 80%
                         margin-bottom: 30px
                     & .tea_img_name
                         font-size: 20px
@@ -261,9 +265,13 @@ $color_green:#00A26A
             top: -180px
             left: 28%
         & .artisan_photo_content 
-            width: 100%
+            width: 400px
+            height: 500px
             & img 
                 border-radius: 10px
+                object-fit: cover
+                width: 100%
+                height: 100%
     & .artisan_inner_box
         display: flex
         justify-content: center
@@ -440,6 +448,7 @@ $color_green:#00A26A
         height: 100%
         display: flex
         & .flavor_content
+            position: relative
             width: calc((calc(100vw/2*1.2))/4)
             background-color: #ccc
             height: 100%
@@ -447,18 +456,48 @@ $color_green:#00A26A
             transition: 0.5s
             transform-origin: bottom
             overflow: hidden
+            text-decoration: none
+            color: $color_white
             & .flavor_kind
                 width: 100%
                 height: 100%
-                background-image: url(../img/teatwo.jpg)
-                background-size: 350%
+                background-size: 160%
                 background-position: center
-        & .flavor_content.one:hover
-            flex-grow: 2
-        & .flavor_content.two:hover
-            flex-grow: 2
-        & .flavor_content.thr:hover
-            flex-grow: 2
+                transition: 0.5s
+            & .word 
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,0%)
+                opacity: 0
+                transition: 0.5s
+                font-size: 36px
+            & .flavor_kind.little
+                background-image: url(../img/44.jpg)
+            & .flavor_kind.strong
+                background-image: url(../img/39.png)
+            & .flavor_kind.old
+                background-image: url(../img/43.jpg)
+            & .flavor_kind:hover
+                filter: brightness(0.5)
+        & .flavor_content:nth-child(1):hover
+            flex-grow: 3
+            background-size: 170%
+            & .word
+                opacity: 1
+                transform: translate(-50%,-50%)
+        & .flavor_content:nth-child(2):hover
+            flex-grow: 3
+            background-size: 170%
+            & .word
+                opacity: 1
+                transform: translate(-50%,-50%)
+        & .flavor_content:nth-child(3):hover
+            flex-grow: 3
+            background-size: 170%
+            & .word
+                opacity: 1
+                transform: translate(-50%,-50%)
 
     @keyframes rightscale 
         0%
