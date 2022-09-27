@@ -96,21 +96,32 @@ body
             & .choose_group
                 position: sticky
                 top: 100px
-                & .choose_item:hover a 
+                & li:hover > a 
                     color: $color_main
                 & .choose_item
-                    display: flex
-                    align-items: center
-                    justify-content: space-between
+                    position: relative
                     margin: 25px 0px
-                    & a 
+
+                    & a
+                        cursor: pointer 
                         transition: 0.3s
                         font-size: 16px
                         text-decoration: none
                         color: $color_black
                     & i 
+                        position: absolute
                         font-size: 12px
                         transform: rotate(180deg)
+                        right: 10px
+                    & .up
+                         transform: rotate(0deg)
+                    & .item_group
+                        display: none
+                        position: relative
+                        margin-left: 20px
+                        top: 100%
+                        & .item_list
+                            padding-top: 20px
         & .content_buy
             width: 80%
             & .content_buy_area

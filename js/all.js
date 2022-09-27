@@ -26,3 +26,21 @@ $(window).on("mousemove",function(e){
     $("#followbtn").css("left",x);
     $("#followbtn").css("top",y);
 });
+let i=0;
+$("#choosesubcribe").click(function(){
+    $("#subcribe").slideToggle();
+    $("#go").addClass("up");
+    i++;
+    if(i%2==0){
+        $("#go").removeClass("up");
+    }
+});
+let y=0;
+$("#choosemonth").click(function(){
+    $("#month").slideToggle();
+    $("#gogo").addClass("up");
+    y++;
+    if(y%2==0){
+        $("#gogo").removeClass("up");
+    }
+});
