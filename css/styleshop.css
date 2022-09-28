@@ -265,7 +265,7 @@
   align-items: center;
   text-decoration: none;
   color: #333;
-  font-size: 16px;
+  font-size: 12px;
   transition: 0.3s;
 }
 .product_area .container_product_area .content_buy .container_page .page_line:hover {
@@ -281,7 +281,7 @@
   display: flex;
 }
 .product_area .container_product_area .content_buy .container_page .pagenum_group .pagenum_list a {
-  font-size: 22px;
+  font-size: 18px;
   text-decoration: none;
   padding: 0px 20px;
   color: #333;
