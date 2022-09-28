@@ -8,9 +8,9 @@ $(window).on("scroll",function(e){
     }
 });
 
-$("#totop").on("click",function(){
-    $("html,body").animate({scrollTop:0},300);
-});
+// $("#totop").on("click",function(){
+//     $("html,body").animate({scrollTop:0},300);
+// });
 
 $(window).on("mousemove",function(e){ 
     let pageX = e.pageX;
