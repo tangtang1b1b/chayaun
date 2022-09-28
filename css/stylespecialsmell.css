@@ -29,7 +29,7 @@
   text-decoration: none;
   color: #333;
 }
-.type_menu .container_type .type_group .type_list:nth-child(1) a {
+.type_menu .container_type .type_group .type_list:nth-child(3) a {
   border-bottom: solid 1px rgba(51, 51, 51, 0.3);
 }
 .type_menu .container_type .type_group .type_list:hover a {
