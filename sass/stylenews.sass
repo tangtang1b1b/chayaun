@@ -4,5 +4,50 @@ $color_black:#333
 $color_gray:#666
 $color_green:#00A26A
 
+*
+    // outline: solid 1px
 
-    
+.list_item:nth-child(4) a
+    border-bottom: solid 1px rgba($color_main,0.5) 
+.first_img
+    background-image: url(../img/76.jpg)
+    background-position: center
+
+.news
+    width: 100%
+    background-color: $color_white
+    & .container_news
+        max-width: 1200px
+        margin: auto
+        & .content_news_group
+            display: flex
+            width: 100%
+            & .content_news_list
+                width: 100%
+                display: flex
+                padding: 10px
+                & img
+                    border-radius: 5px
+                    width: 200px
+                    height: 150px
+                    object-fit: cover
+                & .detial
+                    width: 950px
+                    padding: 10px
+                    margin-left: 20px
+                    & h3,.detial_content,.detial_date
+                        padding: 10px 0px
+                    & h3
+                        font-size: 20px
+                    & .detial_content
+                        font-size: 14px
+                        color: rgba($color_black,0.8)
+                    & .detial_date
+                        font-weight: bold
+                        font-size: 14px
+                    
+                
+
+
+.foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(5) a 
+    color: rgba($color_white,0.5)

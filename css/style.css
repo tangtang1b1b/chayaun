@@ -488,7 +488,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 0px;
   background-color: transparent;
   font-weight: bold;
   border-radius: 5px;
@@ -670,7 +670,7 @@
 .newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_send #newsmail {
   width: 60%;
   font-size: 16px;
-  padding: 30px 15px;
+  padding: 30px 15px 15px;
   background-color: #fafafa;
   border: none;
   border-bottom: solid 1px rgba(51, 51, 51, 0.3);
