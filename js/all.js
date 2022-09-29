@@ -1,10 +1,12 @@
 $(window).on("scroll",function(e){
-    if($(window).scrollTop()>300){
+    if($(window).scrollTop()>450){
         $(".nav_box").css("box-shadow","0px 0px 5px 0px #BBB");
         $("#totop").css("opacity","1");
+        $("#totop").css("transform","scale(1) rotate(-90deg)");
     }else{
         $(".nav_box").css("box-shadow","none");
         $("#totop").css("opacity","0");
+        $("#totop").css("transform","scale(0) rotate(-90deg)");
     }
 });
 
