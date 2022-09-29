@@ -45,6 +45,11 @@ body, html {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.main_area .container_main .content_main a img:hover {
+  box-shadow: 0px 1px 10px 0px rgba(51, 51, 51, 0.5);
 }
 
 .flavor_little {
@@ -108,10 +113,12 @@ body, html {
 }
 .little_kind .container_kind .content_kind .seer {
   border: solid 1px rgba(51, 51, 51, 0.3);
+  border-radius: 5px;
 }
 .little_kind .container_kind .content_kind .seer img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 .little_kind .container_kind .content_kind .seer h4, .little_kind .container_kind .content_kind .seer p {
   padding-top: 15px;
