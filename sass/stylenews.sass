@@ -20,31 +20,58 @@ $color_green:#00A26A
         max-width: 1200px
         margin: auto
         & .content_news_group
-            display: flex
+            padding-bottom: 40px
             width: 100%
+            & .content_news_list + .content_news_list 
+                border-top: 1px solid rgba($color_black,0.3)
+            & .content_news_list:nth-child(1)
+                padding-top: 80px
             & .content_news_list
                 width: 100%
-                display: flex
-                padding: 10px
-                & img
-                    border-radius: 5px
-                    width: 200px
-                    height: 150px
-                    object-fit: cover
-                & .detial
-                    width: 950px
-                    padding: 10px
-                    margin-left: 20px
-                    & h3,.detial_content,.detial_date
-                        padding: 10px 0px
-                    & h3
-                        font-size: 20px
-                    & .detial_content
-                        font-size: 14px
-                        color: rgba($color_black,0.8)
-                    & .detial_date
-                        font-weight: bold
-                        font-size: 14px
+                padding: 20px 10px
+                & a 
+                    display: flex
+                    text-decoration: none
+                    & img
+                        border-radius: 5px
+                        width: 200px
+                        height: 150px
+                        object-fit: cover
+                    & .detial
+                        width: 950px
+                        padding: 10px
+                        margin-left: 20px
+                        & .paper,.detial_content,.detial_date
+                            padding: 10px 0px
+                        & .paper
+                            letter-spacing: 1px
+                            color: $color_black
+                            font-size: 20px
+                            transition: 0.3s
+                            &:hover
+                                color: $color_main
+                        & .detial_content
+                            letter-spacing: 1px
+                            font-size: 14px
+                            color: rgba($color_black,0.8)
+                        & .detial_date
+                            font-weight: bold
+                            font-size: 14px
+                            color: $color_black
+                        & .lay
+                            letter-spacing: 1px
+                            width: 100px
+                            height: 20px
+                            background-color: $color_black
+                            color: $color_white
+                            font-size: 12px
+                            font-weight: bold
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            padding: 5px
+                            text-align: center
+                            border-radius: 20px 
                     
                 
 
