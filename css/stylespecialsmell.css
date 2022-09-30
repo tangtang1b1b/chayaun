@@ -67,7 +67,6 @@
 .product_menu .container_menu .menu_group .menu_list a img {
   width: 100%;
   border-radius: 5px;
-  height: 22vw;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.3s;
