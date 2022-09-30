@@ -197,16 +197,15 @@ $color_green:#00A26A
             & .read_more
                 position: relative
                 display: flex
-                justify-content: space-between
+                justify-content: start
                 align-items: center
-                padding: 15px 20px
-                background-color: transparent
-                border-radius: 5px
-                display: inline-block
+                // padding: 15px 20px
+                // background-color: #ccc
+                // border-radius: 5px
+                // display: inline-block
+                text-decoration: none
                 transition: 0.5s
                 left: 950px
-                & .read_more_text, .read_go
-                    display: inline-block
                 & .read_more_text
                     color: $color_black
                     font-weight: bold
@@ -221,17 +220,43 @@ $color_green:#00A26A
                     font-size: 26px
                     transition: 0.5s
                     transition-delay: 0.2s
+                    & .circle
+                        background-color: $color_white
+                        color: $color_black
+                        border: solid 1px rgba($color_black,0.3)
+                        border-radius: 100%
+                        font-size: 16px
+                        width: 55px
+                        height: 55px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        position: relative
+                        z-index: 2
+                        transition: 0.2s
+                    & .circle::before 
+                        content: ""
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 55px
+                        height: 55px
+                        background-color: $color_white
+                        z-index: -1
+                        border-radius: 100%
+                        transform: scale(0)
+                        opacity: 0
+                        background-color: $color_main
+                        transition: transform 0.3s 0.3s, opacity 0.3s
             & .read_more:hover p
                 animation: upup 0.5s 1
-            & .read_more:hover .read_go
-                animation: rightri 0.5s 1
-    @keyframes rightri 
-        0%
-            transform: translateX(-30px)
-            opacity: 0
-        100%
-            transform: translateX(0px)
-            opacity: 1
+            & .read_more:hover .circle::before
+                transition: transform 0.3s linear, opacity 0.3s
+                transform: scale(1)
+                opacity: 1
+            & .read_more:hover .circle
+                color: $color_white
+
     @keyframes upup 
         0%
             transform: translateY(0%)
@@ -331,44 +356,64 @@ $color_green:#00A26A
             & .read_inner
                 max-width: 1200px
                 padding: 0 20px
-
             & .read_more
+                text-decoration: none
                 position: relative
                 display: flex
-                justify-content: space-between
+                justify-content: start
                 align-items: center
-                padding: 15px 20px
-                background-color: transparent
-                border-radius: 5px
-                display: inline-block
                 transition: 0.5s
                 left: 950px
-                
-
-                & .read_more_text, .read_go
-                    display: inline-block
-
                 & .read_more_text
                     color: $color_black
                     font-weight: bold
                     overflow: hidden
                     height: 21px
-
                     & p
                         transition: 0.5s
                         font-size: 22px
-
                 & .read_go
                     margin-left: 40px
                     color: $color_white
                     font-size: 26px
                     transition: 0.5s
                     transition-delay: 0.2s
-
+                    & .circle
+                        background-color: $color_white
+                        color: $color_black
+                        border: solid 1px rgba($color_black,0.3)
+                        border-radius: 100%
+                        font-size: 16px
+                        width: 55px
+                        height: 55px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        position: relative
+                        z-index: 2
+                        transition: 0.2s
+                    & .circle::before 
+                        content: ""
+                        position: absolute
+                        top: 0
+                        left: 0
+                        width: 55px
+                        height: 55px
+                        background-color: $color_white
+                        z-index: -1
+                        border-radius: 100%
+                        transform: scale(0)
+                        opacity: 0
+                        background-color: $color_main
+                        transition: transform 0.3s 0.3s, opacity 0.3s
             & .read_more:hover p
                 animation: upup 0.5s 1
-            & .read_more:hover .read_go
-                animation: rightri 0.5s 1
+            & .read_more:hover .circle::before
+                transition: transform 0.3s linear, opacity 0.3s
+                transform: scale(1)
+                opacity: 1
+            & .read_more:hover .circle
+                color: $color_white
 // 第四區塊
 .flavor_row
     position: relative
@@ -404,19 +449,12 @@ $color_green:#00A26A
                         color: $color_white
 
                     & .read_more
+                        text-decoration: none
                         display: flex
-                        justify-content: space-between
+                        justify-content: start
                         align-items: center
                         padding: 15px 0px
-                        background-color: transparent
-                        font-weight: bold
-                        border-radius: 5px
-                        display: inline-block
                         transition: 0.5s
-
-                        & .read_more_text, .read_go
-                            display: inline-block
-
                         & .read_more_text
                             color: $color_white
                             overflow: hidden
@@ -430,7 +468,7 @@ $color_green:#00A26A
                             margin-left: 40px
                             color: $color_white 
                             font-weight: bold
-                            font-size: 26px
+                            font-size: 18px
                             transition: 0.5s
                             transition-delay: 0.2s
                             transform: rotate(-45deg)
