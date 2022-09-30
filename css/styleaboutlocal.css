@@ -78,6 +78,9 @@
   transform: scale(1.1);
   filter: contrast(0.6);
 }
+.place_about .container_place .content_place_group .content_place_list a:hover .content_img {
+  transform: scale(0.99);
+}
 .place_about .container_place .content_place_group .content_place_list a .content_local {
   margin: auto 20px auto;
   width: 30%;
@@ -99,6 +102,7 @@
   font-size: 14px;
 }
 .place_about .container_place .content_place_group .content_place_list a .content_img {
+  transition: 0.1s;
   width: 50%;
   height: 250px;
   overflow: hidden;

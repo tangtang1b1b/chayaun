@@ -35,6 +35,7 @@
 }
 .news .container_news .content_news_group .content_news_list a img {
   border-radius: 5px;
+  min-width: 200px;
   width: 200px;
   height: 150px;
   -o-object-fit: cover;
