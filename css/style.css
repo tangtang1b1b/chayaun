@@ -252,7 +252,6 @@
   color: #fafafa;
   font-size: 26px;
   transition: 0.5s;
-  transition-delay: 0.2s;
 }
 .derivative_row .derivative_inner_box .read .read_more .read_go .circle {
   background-color: #fafafa;
@@ -272,13 +271,12 @@
 .derivative_row .derivative_inner_box .read .read_more .read_go .circle::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 55px;
   height: 55px;
   background-color: #fafafa;
   z-index: -1;
   border-radius: 100%;
+  border: solid 1px transparent;
   transform: scale(0);
   opacity: 0;
   background-color: #2A9D8F;
@@ -459,10 +457,9 @@
 .artisan_row .artisan_inner_box .read .read_more .read_go .circle::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 55px;
   height: 55px;
+  border: solid 1px transparent;
   background-color: #fafafa;
   z-index: -1;
   border-radius: 100%;
