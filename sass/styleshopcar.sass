@@ -147,7 +147,7 @@ $color_green:#00A26A
                     & p 
                         font-size: 14px
                     & .addbtn
-                        background-color: $color_green
+                        background-color: $color_black
                         width: 100%
                         padding: 5px 0px
                         text-align: center
@@ -157,3 +157,79 @@ $color_green:#00A26A
                             color: $color_white
                             font-size: 14px
 
+.payfunc
+    padding-top: 30px
+    width: 100%
+    background-color: $color_white
+    & .container_payfunc
+        max-width: 1200px
+        margin: auto
+        display: flex
+        justify-content: space-between
+        & .content_payfunc
+            width: 67%
+            & .title_func
+                padding: 10px 15px
+                border: solid 1px #ccc
+                border-bottom: none
+                background-color: #f6f6f6
+                font-size: 22px
+            & .form_family
+                padding: 10px 15px
+                border: solid 1px #ccc
+                & .form_group
+                    display: flex
+                    flex-direction: column
+                    padding: 10px 0px
+                    & select 
+                        margin: 10px 0px
+                        padding: 5px 0px
+                        font-size: 16px
+        & .content_payinfo
+            width: 30%
+            & .title_info
+                background-color: #f6f6f6
+                border: solid 1px #ccc
+                border-bottom: none
+                padding: 10px 15px
+                font-size: 22px
+            & .total_info
+                border: solid 1px #ccc
+                padding: 10px 15px
+                & .info_one
+                    margin-bottom: 40px
+                    & a 
+                        text-decoration: none
+                & .info_two
+                    padding-bottom: 20px
+                    margin-bottom: 30px
+                    border-bottom: 1px solid #dcdcdc
+                    & a 
+                        text-decoration: none
+                & .total
+                    margin-bottom: 15px
+                    display: flex
+                    justify-content: space-between
+            & .buybtn
+                width: 100%
+                background-color: $color_green
+                text-align: center
+                padding: 15px 0px
+                font-size: 18px
+                & a 
+                    text-decoration: none
+                    color: $color_white
+            & .buybtn:hover
+                filter: brightness(1.1)
+
+.lastcheck
+    padding: 30px 0px 100px
+    width: 100%
+    background-color: $color_white
+    & .container_last
+        max-width: 1200px
+        margin: auto
+        border: solid 1px #ccc
+        padding: 10px 15px
+        box-sizing: border-box
+        font-size: 14px
