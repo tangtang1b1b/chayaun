@@ -4,4 +4,156 @@ $color_black:#333
 $color_gray:#666
 $color_green:#00A26A
 
+*
+    // outline: solid 1px
+
+.imgcar
+    background-color: $color_white
+    padding-top: 160px
+    width: 100%
+    & .container_imgcar
+        max-width: 1200px
+        margin: auto
+        display: flex
+        justify-content: center
+        & .item_num
+            width: 200px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            & p 
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-bottom: 10px
+                text-align: center
+                border-radius: 100%
+                width: 30px
+                height: 30px
+                background-color: $color_main
+                color: $color_white
+                font-size: 14px
+                font-weight: bold
+        & .item_num + .item_num p
+            background-color: #ccc
+        & .item_num:nth-child(2) p::before  
+            content: ""
+            position: absolute
+            top: 50%
+            left: 30px
+            width: 170px
+            height: 2px
+            background-color: #ccc
+        & .item_num:nth-child(2) p::after
+            content: ""
+            position: absolute
+            top: 50%
+            right: 30px
+            width: 170px
+            height: 2px
+            background-color: #ccc
+
+.checkit
+    padding-top: 30px
+    background-color: $color_white
+    width: 100%
+    & .container_check
+        max-width: 1200px
+        margin: auto
+        & .title_check
+            border: solid 1px #ccc
+            border-bottom: none
+            background-color: #f6f6f6
+            padding: 10px 15px
+            font-size: 22px
+        & .content_check
+            & .smallcontent
+                border: solid 1px #ccc
+                border-bottom: none
+                padding: 10px 15px
+                display: flex
+                & .smallname
+                    width: 25%
+            & .productcontent
+                display: flex
+                border: solid 1px #ccc
+                border-bottom: none
+                padding: 10px 15px
+                & .productname
+                    width: 25%
+        & .half_check
+            padding: 10px 15px
+            border: solid 1px #ccc
+            & .half_title
+                margin-bottom: 10px
+            & .half_nae:nth-child(2)
+                display: flex
+                align-items: center
+                margin-bottom: 10px
+                font-size: 14px
+                & span
+                    margin-right: 20px
+                    text-align: center
+                    font-size: 12px
+                    padding: 5px 0px
+                    width: 150px
+                    background-color: #e8f8e8
+            & .half_nae:nth-child(3)
+                display: flex
+                align-items: center
+                margin-bottom: 10px
+                font-size: 14px
+                & span
+                    margin-right: 20px
+                    text-align: center
+                    font-size: 12px
+                    padding: 5px 0px
+                    width: 150px
+                    background-color: #ffe8c6
+
+.morebuyit
+    padding-top: 30px
+    width: 100%
+    background-color: $color_white
+    & .container_norebuy
+        max-width: 1200px
+        margin: auto
+        & .title_morebuy
+            border: solid 1px #ccc
+            border-bottom: none
+            font-size: 22px
+            padding: 10px 15px
+        & .content_morebuy
+            border: solid 1px #ccc
+            padding: 10px 15px
+            display: flex
+            & .morebuyprod
+                display: flex
+                justify-content: center
+                width: 25%
+                & .imgbox
+                    width: 30%
+                    & img 
+                        width: 100%
+                & .prodetail
+                    padding: 0px 10px
+                    box-sizing: border-box
+                    width: 70%
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    & p 
+                        font-size: 14px
+                    & .addbtn
+                        background-color: $color_green
+                        width: 100%
+                        padding: 5px 0px
+                        text-align: center
+                        border-radius: 5px
+                        & a 
+                            text-decoration: none
+                            color: $color_white
+                            font-size: 14px
 
