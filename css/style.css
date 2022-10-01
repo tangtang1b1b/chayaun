@@ -530,6 +530,7 @@
   color: #fafafa;
   overflow: hidden;
   height: 20px;
+  font-weight: bold;
 }
 .flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read_more .read_more_text .read_more_view {
   transition: 0.5s;
