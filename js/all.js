@@ -48,6 +48,8 @@ $("#choosemonth").click(function(){
 });
 
 $("#dun").click(function(){
+    $(".choosewhat p").text("使用LINE登入");
+    $(".choosewhat p + p").text("使用FaceBook登入");
     $(".write_group").css("display","none");
     $(".write_group.other").css("display","block");
     $(".letgo").text("開始購物吧！");
@@ -56,6 +58,8 @@ $("#dun").click(function(){
     $(".forget").css("display","block")
 });
 $("#ju").click(function(){
+    $(".choosewhat p").text("使用LINE註冊");
+    $(".choosewhat p + p").text("使用FaceBook註冊");
     $(".write_group").css("display","block");
     $(".write_group.other").css("display","none");
     $(".letgo").text("立即加入");
