@@ -523,7 +523,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 15px 0px;
+  padding: 5px 0px;
   transition: 0.5s;
 }
 .flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read_more .read_more_text {
