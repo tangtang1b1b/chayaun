@@ -46,3 +46,18 @@ $("#choosemonth").click(function(){
         $("#gogo").removeClass("up");
     }
 });
+
+$("#dun").click(function(){
+    $(".write_group").css("display","none");
+    $(".write_group.other").css("display","block");
+    $(".letgo").text("開始購物吧！");
+    $(".jufr").removeClass("dunjuadd");
+    $(".dunse").addClass("dunjuadd");
+});
+$("#ju").click(function(){
+    $(".write_group").css("display","block");
+    $(".write_group.other").css("display","none");
+    $(".letgo").text("立即加入");
+    $(".dunse").removeClass("dunjuadd");
+    $(".jufr").addClass("dunjuadd");
+});
