@@ -53,6 +53,7 @@ $("#dun").click(function(){
     $(".letgo").text("開始購物吧！");
     $(".jufr").removeClass("dunjuadd");
     $(".dunse").addClass("dunjuadd");
+    $(".forget").css("display","block")
 });
 $("#ju").click(function(){
     $(".write_group").css("display","block");
@@ -60,4 +61,5 @@ $("#ju").click(function(){
     $(".letgo").text("立即加入");
     $(".dunse").removeClass("dunjuadd");
     $(".jufr").addClass("dunjuadd");
+    $(".forget").css("display","none")
 });
