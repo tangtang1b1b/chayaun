@@ -1,0 +1,159 @@
+$color_main:#2A9D8F
+$color_white:#fafafa
+$color_black:#333
+$color_gray:#666
+$color_green:#00A26A
+
+*
+    // outline: solid 1px
+
+.shopinner
+    padding: 160px 0px
+    width: 100%
+    background-color: $color_white
+    & .container_inner
+        max-width: 1200px
+        margin: auto
+        display: flex
+        & .content_inner
+            width: 50%
+            & .main_img
+                position: relative
+                padding: 0px 50px
+                & .main_control:nth-child(1)
+                    cursor: pointer
+                    position: absolute
+                    font-size: 48px
+                    color: rgba($color_white,0.8)
+                    left: 50px
+                    top: 50%
+                    transform: translateY(-50%) rotate(-90deg)
+                & .main_control:nth-child(2)
+                    cursor: pointer
+                    position: absolute
+                    font-size: 48px
+                    color: rgba($color_white,0.8)
+                    right: 50px
+                    top: 50%
+                    transform: translateY(-50%) rotate(90deg)
+                & a img 
+                    box-sizing: border-box
+                    width: 100%
+            & .other_img
+                padding: 0px 50px
+                & .img_group
+                    display: flex
+                    & .img_list
+                        width: 20%
+                        margin-top: 5px
+                        margin-right: 10px
+                        & img
+                            cursor: pointer
+                            box-sizing: border-box
+                            width: 100%
+        & .content_shopping
+            width: 50%
+            & .title_shop
+                margin: 30px 0px 0px
+                padding: 10px
+                font-size: 26px
+            & .title_cont
+                padding: 10px
+                & p 
+                    margin-bottom: 20px
+            & .title_price
+                font-size: 26px
+                padding: 10px
+                margin-top: 30px
+            & .title_btn
+                display: flex
+                text-align: center
+                font-size: 18px
+                justify-content: space-evenly
+                margin-bottom: 30px
+                & .btnadd
+                    cursor: pointer
+                    width: 45%
+                    padding: 15px 5px
+                    background-color: $color_white
+                    color: $color_black
+                    border: 1px solid rgba($color_black,0.5)
+                    border-radius: 5px
+                    &:hover
+                        filter: brightness(0.95)
+                & .btnbuy
+                    cursor: pointer
+                    width: 45%
+                    padding: 15px 5px
+                    background-color: $color_green
+                    border: 1px solid #dcdcdc
+                    border-radius: 5px
+                    &:hover
+                        filter: brightness(1.1)
+                    & a 
+                        text-decoration: none
+                        color: $color_white
+            & .dcrib_big
+                padding: 10px
+                & .title_dcrib_group
+                    
+                    & .title_dcrib_list
+                        padding: 10px 0px
+
+.morebuyit
+    width: 100%
+    background-color: #dcdcdc
+    padding-bottom: 50px
+    & .container_norebuy
+        max-width: 1200px
+        margin: auto
+        & .title_morebuy
+            font-size: 22px
+            text-align: center
+            padding: 30px 0px 50px
+        & .content_morebuy
+            padding: 10px 15px
+            display: flex
+            & .morebuyprod:hover .imgbox .addbtn
+                height: 50px
+                opacity: 1
+                transition: 0.3s
+            & .morebuyprod
+                cursor: pointer
+                display: flex
+                justify-content: center
+                flex-direction: column
+                width: 25%
+                padding: 10px
+                & .imgbox
+                    position: relative
+                    width: 100%
+                    & img 
+                        width: 100%
+                        vertical-align: top
+                    & .addbtn
+                        
+                        transition: 0.3s
+                        bottom: 0px
+                        position: absolute
+                        background-color: $color_green
+                        width: 100%
+                        height: 0px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        opacity: 0
+                        & a 
+                            
+                            text-decoration: none
+                            color: $color_white
+                            font-size: 16px
+                & .prodetail
+                    padding: 10px 10px 0px
+                    box-sizing: border-box
+                    width: 100%
+                    & p 
+                        text-align: center
+                        font-size: 18px
+
+
