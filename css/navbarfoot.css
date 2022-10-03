@@ -3,7 +3,7 @@
   /* outline: solid 1px; */
 }
 
-body, html {
+body,html {
   /* scroll-behavior: smooth; */
 }
 body::-webkit-scrollbar, html::-webkit-scrollbar {
@@ -71,7 +71,6 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   background-color: #00A26A;
   top: 0;
   bottom: 0;
-  /* left: -40px; */
   left: 0;
   margin: auto;
 }
