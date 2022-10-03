@@ -352,6 +352,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   .foot_row .foot_inner_box .foot_inner_down .foot_tibame {
     display: flex;
     justify-content: center;
+    text-align: center;
     color: #fafafa;
     font-size: 12px;
   }
