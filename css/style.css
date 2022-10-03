@@ -232,11 +232,11 @@
 .derivative_row .derivative_inner_box .read .read_more {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
   align-items: center;
   text-decoration: none;
   transition: 0.5s;
-  left: 950px;
+  right: 0px;
 }
 .derivative_row .derivative_inner_box .read .read_more .read_more_text {
   color: #333;
@@ -418,10 +418,10 @@
   text-decoration: none;
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-end;
   align-items: center;
   transition: 0.5s;
-  left: 950px;
+  right: 0px;
 }
 .artisan_row .artisan_inner_box .read .read_more .read_more_text {
   color: #333;
@@ -583,6 +583,8 @@
 }
 .flavor_row .flavor_container .flavor_content .word {
   position: absolute;
+  text-align: center;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
