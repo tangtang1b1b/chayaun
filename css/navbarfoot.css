@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   margin: auto;
   font-size: 48px;
   color: #333;
+  padding-left: 40px;
 }
 .title_area h2::before {
   content: "";
@@ -70,7 +71,8 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   background-color: #00A26A;
   top: 0;
   bottom: 0;
-  left: -40px;
+  /* left: -40px; */
+  left: 0;
   margin: auto;
 }
 

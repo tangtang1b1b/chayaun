@@ -1,3 +1,7 @@
+* {
+  outline: solid 1px;
+}
+
 .list_item:nth-child(1) a {
   border-bottom: solid 1px rgba(42, 157, 143, 0.5);
 }
@@ -9,30 +13,6 @@
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-}
-
-.title_area {
-  background-color: #fafafa;
-  width: 100%;
-  padding-top: 80px;
-}
-.title_area h2 {
-  position: relative;
-  max-width: 1200px;
-  margin: auto;
-  font-size: 48px;
-  color: #333;
-}
-.title_area h2::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 15px;
-  background-color: #00A26A;
-  top: 0;
-  bottom: 0;
-  left: -40px;
-  margin: auto;
 }
 
 .type_area {
