@@ -296,7 +296,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     padding: 60px 0px 20px;
     font-weight: normal;
     color: #fafafa;
-    font-size: 22px;
+    font-size: 20px;
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact {
     display: flex;
