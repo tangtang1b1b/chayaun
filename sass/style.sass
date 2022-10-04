@@ -72,7 +72,7 @@ $color_green:#00A26A
                     transform: translateX(40px) translateY(-50%)
                     & .key_item
                         width: 75px
-            & .read_more::before 
+            & .read_more::before
                 content: ""
                 position: absolute
                 display: inline-block
@@ -143,7 +143,7 @@ $color_green:#00A26A
                 margin: auto
                 display: flex
                 justify-content: center
-                transform: translateX(20%)
+                transform: translateX(30vw)
                 & #followbtn
                     transform: translate(-50%,-50%)
                     width: 90px
@@ -154,8 +154,9 @@ $color_green:#00A26A
                     pointer-events: none
                     & img
                         width: 100%
+                & .derivative_list + .derivative_list
+                    padding-left: 30px
                 & .derivative_list
-                    padding-right: 30px
                     & .derivative_list_card
                         text-decoration: none
                         color: $color_black

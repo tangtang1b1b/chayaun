@@ -164,7 +164,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  transform: translateX(20%);
+  transform: translateX(30vw);
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn {
   transform: translate(-50%, -50%);
@@ -178,8 +178,8 @@
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn img {
   width: 100%;
 }
-.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list {
-  padding-right: 30px;
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list + .derivative_list {
+  padding-left: 30px;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card {
   text-decoration: none;
