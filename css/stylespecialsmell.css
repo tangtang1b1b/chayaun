@@ -8,7 +8,7 @@
 
 .type_menu {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 }
 .type_menu .container_type {
   max-width: 1200px;
@@ -41,7 +41,7 @@
 
 .product_menu {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 }
 .product_menu .container_menu {
   max-width: 1200px;
@@ -55,7 +55,7 @@
 }
 .product_menu .container_menu .menu_group .menu_list {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 50px;
   margin-bottom: 50px;
   width: 33.333333%;
 }
@@ -66,10 +66,12 @@
 }
 .product_menu .container_menu .menu_group .menu_list a img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.3s;
+  box-shadow: 0px 2px 10px 0px rgba(51, 51, 51, 0.3);
+  transform: scale(1);
 }
 .product_menu .container_menu .menu_group .menu_list a p, .product_menu .container_menu .menu_group .menu_list a h3 {
   line-height: 20px;
@@ -81,9 +83,10 @@
   color: rgba(51, 51, 51, 0.7);
 }
 .product_menu .container_menu .menu_group .menu_list a:hover img {
-  box-shadow: 0px 3px 10px 0px rgba(51, 51, 51, 0.3);
+  box-shadow: 0px 2px 5px 0px rgba(51, 51, 51, 0.3);
+  transform: scale(0.99);
 }
 
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(3) a {
-  color: rgba(250, 250, 250, 0.5);
+  color: rgba(247, 247, 247, 0.5);
 }

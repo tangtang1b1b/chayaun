@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   z-index: 1;
   width: 15px;
   height: 15px;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
   transform: rotate(-90deg);
   right: 2%;
   bottom: 12%;
@@ -48,7 +48,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
 }
 
 .title_area {
-  background-color: #fafafa;
+  background-color: #f7f7f7 ;
   width: 100%;
   padding-top: 80px;
 }
@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   width: 100%;
   height: 65px;
   padding: 2px 0px;
-  background-color: #fafafa;
+  background-color: #f7f7f7 ;
   transition: 0.3s;
 }
 .nav_box .nav_bar {
@@ -171,7 +171,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   width: 100%;
   height: 0px;
   left: -100%;
-  background-color: #fafafa;
+  background-color: #f7f7f7 ;
   opacity: 0;
   display: flex;
   align-items: center;

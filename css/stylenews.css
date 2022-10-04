@@ -9,7 +9,7 @@
 
 .news {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 }
 .news .container_news {
   max-width: 1200px;
@@ -73,7 +73,7 @@
   width: 100px;
   height: 20px;
   background-color: #333;
-  color: #fafafa;
+  color: #f7f7f7;
   font-size: 12px;
   font-weight: bold;
   display: flex;
@@ -85,5 +85,5 @@
 }
 
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(5) a {
-  color: rgba(250, 250, 250, 0.5);
+  color: rgba(247, 247, 247, 0.5);
 }

@@ -8,7 +8,7 @@
 
 .about_menu {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 }
 .about_menu .container_about {
   max-width: 1200px;
@@ -41,7 +41,7 @@
 
 .alive_area {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
 }
 .alive_area .container_alive {
   max-width: 1200px;
@@ -64,7 +64,7 @@
 
 .photo_area {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
   padding: 80px 0px;
 }
 .photo_area h3 {
@@ -110,5 +110,5 @@
 }
 
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(6) a {
-  color: rgba(250, 250, 250, 0.5);
+  color: rgba(247, 247, 247, 0.5);
 }
