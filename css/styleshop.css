@@ -159,7 +159,7 @@
   color: #333;
 }
 .product_area .container_product_area .content_buy .content_buy_area li .buy_item a img {
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -190,6 +190,7 @@
   width: 3%;
   height: 3%;
   transition: 0.3s;
+  opacity: 0.3;
 }
 .product_area .container_product_area .content_buy .content_buy_area li .buy_item::before {
   left: -5px;
@@ -206,7 +207,8 @@
 .product_area .container_product_area .content_buy .content_buy_area li .buy_item:hover::before, .product_area .container_product_area .content_buy .content_buy_area li .buy_item:hover::after {
   width: calc(100% + 9px);
   height: calc(100% + 9px);
-  border-radius: 5px;
+  border-radius: 10px;
+  opacity: 1;
 }
 @-webkit-keyframes updown {
   0% {

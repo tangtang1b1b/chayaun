@@ -50,7 +50,30 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
 .title_area {
   background-color: #f7f7f7 ;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 20px;
+}
+.title_area .bread_group {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.title_area li {
+  font-size: 12px;
+  color: rgba(51,51,51,0.5);
+  font-weight: bold;
+}
+.title_area .bread_group .bread_list span {
+  padding: 0px 10px;
+}
+.title_area .bread_group .bread_list a {
+  text-decoration: none;
+  transition: 0.3s;
+  color: rgba(51,51,51,1);
+}
+.title_area .bread_group .bread_list a:hover{
+  color: #2A9D8F;
 }
 .title_area h2 {
   position: relative;

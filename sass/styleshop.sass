@@ -137,7 +137,7 @@ $color_green:#00A26A
                             text-decoration: none
                             color: $color_black
                             & img 
-                                border-radius: 5px
+                                border-radius: 10px
                                 width: 100%
                                 object-fit: cover
                                 transition: 0.3s
@@ -162,6 +162,7 @@ $color_green:#00A26A
                         width: 3%
                         height: 3%
                         transition: 0.3s
+                        opacity: 0.3
                     & .buy_item::before 
                         left: -5px
                         top: -5px  
@@ -175,7 +176,8 @@ $color_green:#00A26A
                     & .buy_item:hover::before,.buy_item:hover::after
                         width: calc(100% + 9px)
                         height: calc(100% + 9px)
-                        border-radius: 5px
+                        border-radius: 10px
+                        opacity: 1
                     @keyframes updown
                         0%
                             transform: translateX(-50%) translateY(0%)

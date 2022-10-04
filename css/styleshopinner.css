@@ -1,5 +1,13 @@
+.title_area {
+  padding-top: 100px;
+  padding-left: 50px;
+}
+.title_area .container_title_area .bread_group {
+  margin-bottom: 0px;
+}
+
 .shopinner {
-  padding: 160px 0px;
+  padding: 60px 0px;
   width: 100%;
   background-color: #f7f7f7;
 }
