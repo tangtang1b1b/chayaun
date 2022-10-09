@@ -193,13 +193,13 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  pointer-events: none;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card {
   text-decoration: none;
   color: #333;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .product_else {
+  pointer-events: none;
   width: 430px;
   height: 430px;
 }
@@ -220,7 +220,7 @@
 .derivative_row .derivative_inner_box .derivative_number {
   position: absolute;
   width: 100%;
-  font-size: 20px;
+  font-size: 24px;
   top: 180px;
 }
 .derivative_row .derivative_inner_box .derivative_number .derivative_number_inner {
