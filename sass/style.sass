@@ -109,7 +109,7 @@ $color_green:#00A26A
 .derivative_row
     position: relative
     width: 100%
-    height: 821px
+    height: 921px
     overflow: hidden
     background-color: $color_white
     & .derivative_inner_box
@@ -118,7 +118,7 @@ $color_green:#00A26A
         align-items: center
         position: relative
         width: 100%
-        height: 821px
+        height: 100%
         margin: auto
 
         & .derivative_title
@@ -136,15 +136,21 @@ $color_green:#00A26A
                     font-size: 16px   
                     font-weight: bold
         & .derivative_container
-            width: 100%
+            position: relative
+            height: 430px
+            width: 3000px
             & .derivative_group 
-                position: relative
+                cursor: pointer
+                position: absolute
                 width: fit-content
                 margin: auto
                 display: flex
                 justify-content: center
-                transform: translateX(30vw)
+                left: 700px
+                // transform: translateX(30vw)
+                // left: 30vw
                 & #followbtn
+                    user-select: none
                     transform: translate(-50%,-50%)
                     width: 90px
                     height: 90px
@@ -157,28 +163,30 @@ $color_green:#00A26A
                 & .derivative_list + .derivative_list
                     padding-left: 30px
                 & .derivative_list
+                    user-select: none
+                    pointer-events: none
                     & .derivative_list_card
                         text-decoration: none
                         color: $color_black
                     & .product_else 
-                        width: 400px
-                        height: 400px
+                        width: 430px
+                        height: 430px
                     & .tea_img
                         border-radius: 20px
                         width: 100%
                         height: 100%
                         object-fit: cover
                         object-position: center 80%
-                        margin-bottom: 30px
                         box-shadow: 0px 1px 5px 0px rgba($color_black,0.3)
                     & .tea_img_name
+                        margin-top: 30px
                         font-size: 20px
 
         & .derivative_number
             position: absolute
             width: 100%
             font-size: 20px
-            top: 160px
+            top: 180px
 
             & .derivative_number_inner
                 display: flex
