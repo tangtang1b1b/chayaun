@@ -27,28 +27,64 @@ $color_green:#00A26A
         display: flex
         & .content_inner
             width: 50%
+            
             & .main_img
                 position: relative
-                padding: 0px 50px
+                margin: 0px 50px
+                overflow: hidden
                 & .main_control:nth-child(1)
                     cursor: pointer
                     position: absolute
-                    font-size: 48px
+                    font-size: 36px
                     color: rgba($color_white,0.8)
-                    left: 50px
+                    left: -50px
                     top: 50%
                     transform: translateY(-50%) rotate(-90deg)
+                    z-index: 1
+                    opacity: 0.5
+                    background-color: rgba($color_white,0.8)
+                    border-radius: 100%
+                    padding: 5px
+                    color: $color_black
+                    transition: 0.3s
+                    &:hover
+                        transform: translateY(-50%) rotate(-90deg) scale(1.2)
+                        opacity: 1
                 & .main_control:nth-child(2)
                     cursor: pointer
                     position: absolute
-                    font-size: 48px
+                    font-size: 36px
                     color: rgba($color_white,0.8)
-                    right: 50px
+                    right: -50px
                     top: 50%
                     transform: translateY(-50%) rotate(90deg)
-                & a img 
-                    box-sizing: border-box
+                    z-index: 1
+                    opacity: 0.5
+                    background-color: rgba($color_white,0.8)
+                    border-radius: 100%
+                    padding: 5px
+                    color: $color_black
+                    transition: 0.3s
+                    &:hover
+                        transform: translateY(-50%) rotate(90deg) scale(1.2)
+                        opacity: 1
+                & .bigpi
                     width: 100%
+                    overflow: hidden
+                & .bigpi_group
+                    transition: 0.5s
+                    position: relative
+                    width: 700%
+                    display: flex
+                    & .bigpi_list
+                        width: 100%
+                    & .bigpi_list img
+                        box-sizing: border-box
+                        width: 100%
+            & .main_img:hover .main_control:nth-child(1)
+                left: 5px
+            & .main_img:hover .main_control:nth-child(2)
+                right: 5px
             & .other_img
                 padding: 0px 50px
                 & .img_group
