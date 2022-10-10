@@ -13,90 +13,123 @@ $color_green:#00A26A
 
 .banner_row
     width: 100%
-    margin: auto
-    height: 95vh
-    background-size: cover
-    background-position: center 
-    background-image: url(../img/56.jpg)
-    & .banner_inner_box
-        position: relative
-        max-width: 1200px
-        height: 100%
-        margin: auto
-        padding: 0 20px
-        display: flex
-        align-items: flex-end
-        & .banner_inner
+    & .banner_go
+        width: 100%
+        & ul
             position: relative
-            bottom: 10%
-            & .main_new
-                color: $color_white
-                font-size: 16px   
-
-            & .main_pro
-                color: $color_white
-                font-size: 48px
-                margin-top: 10px
-            // 按鈕
-            & .read_more
+            width: 400%
+            display: flex
+            & li 
                 position: relative
-                display: flex
-                justify-content: space-between
-                align-items: center
-                padding: 15px 20px
-                background-color: $color_white
-                border-radius: 50px
-                cursor: pointer
-                margin-top: 20px
-                display: inline-block
-                width: 140px
-                transition: 0.5s
-                overflow: hidden
-                text-decoration: none
-                & .read_more_text
-                    color: $color_black
-                    font-weight: bold
+                width: 100%
+                & .bangli 
+                    width: 100%
+                    height: 99vh
+                    object-fit: cover
+                    object-position: center
+                    vertical-align: top
+    & .banner_inner_box_group
+        position: absolute
+        width: 400%
+        display: flex
+        bottom: 10%
+        & .banner_inner_box
+            position: relative
+            max-width: 1200px
+            margin: auto
+            width: 100%
+            padding: 0 20px
+            display: flex
+            & .banner_inner
+                position: relative
+                & .main_new
+                    text-shadow: 1px 1px 2px black
+                    color: $color_white
+                    font-size: 16px   
+                & .main_pro
+                    text-shadow: 1px 1px 2px black
+                    color: $color_white
+                    font-size: 48px
+                    margin-top: 10px
+                // 按鈕
+                & .read_more
+                    position: relative
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 15px 20px
+                    background-color: $color_white
+                    border-radius: 50px
+                    cursor: pointer
+                    margin-top: 20px
+                    display: inline-block
+                    width: 140px
+                    transition: 0.5s
                     overflow: hidden
-                    height: 20px
-                    transition: 0.2s
-                    & p
-                        font-size: 22px
-                & .read_go
+                    text-decoration: none
+                    & .read_more_text
+                        color: $color_black
+                        font-weight: bold
+                        overflow: hidden
+                        height: 20px
+                        transition: 0.2s
+                        & p
+                            font-size: 22px
+                    & .read_go
+                        position: absolute
+                        color: $color_black
+                        font-size: 26px
+                        font-weight: bold
+                        transition: 0.2s 
+                        top: 50%
+                        right: 0
+                        transform: translateX(40px) translateY(-50%)
+                        & .key_item
+                            width: 75px
+                & .read_more::before
+                    content: ""
                     position: absolute
-                    color: $color_black
-                    font-size: 26px
-                    font-weight: bold
-                    transition: 0.2s 
+                    display: inline-block
+                    transform-origin: 0 0
                     top: 50%
-                    right: 0
-                    transform: translateX(40px) translateY(-50%)
-                    & .key_item
-                        width: 75px
-            & .read_more::before
-                content: ""
-                position: absolute
-                display: inline-block
-                transform-origin: 0 0
-                top: 50%
-                width: 15px
-                height: 15px
-                background-color: $color_black
-                border-radius: 100%
-                left: 10px
-                transform: scale(0) translateY(-50%)
-                transition: 0.2s 
-            & .read_more:hover::before 
-                transform: scale(1) translateY(-50%)
-                transition: 0.2s 
-            & .read_more:hover .read_more_text
-                transition: 0.2s 
-                transform: translateX(20px)
-            & .read_more:hover .read_go
-                transform: translateX(75px) translateY(-50%)
-                transition: 0.2s 
-            & .read_more:hover
-                box-shadow: 0px 0px 15px rgba(#000,0.5)
-                animation: movedown 0.2s
+                    width: 15px
+                    height: 15px
+                    background-color: $color_black
+                    border-radius: 100%
+                    left: 10px
+                    transform: scale(0) translateY(-50%)
+                    transition: 0.2s 
+                & .read_more:hover::before 
+                    transform: scale(1) translateY(-50%)
+                    transition: 0.2s 
+                & .read_more:hover .read_more_text
+                    transition: 0.2s 
+                    transform: translateX(20px)
+                & .read_more:hover .read_go
+                    transform: translateX(75px) translateY(-50%)
+                    transition: 0.2s 
+                & .read_more:hover
+                    box-shadow: 0px 0px 15px rgba(#000,0.5)
+                    animation: movedown 0.2s
+    & .timebar
+        vertical-align: top
+        width: 100%
+        height: 1vh
+        background-color: $color_white
+        & .barbody
+            border-radius: 5px
+            margin: auto
+            animation: bar 5s linear infinite
+            background-color: $color_green
+            height: 100%
+
+    @keyframes bar
+        0%
+            opacity: 0.3
+            width: 0%
+        100%
+            opacity: 1
+            width: 100%
 
     @keyframes movedown
         0%
