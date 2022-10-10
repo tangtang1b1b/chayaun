@@ -38,7 +38,7 @@
   border-radius: 100%;
   padding: 5px;
   color: #333;
-  transition: 0.3s;
+  transition: 0.3s 0.3s;
 }
 .shopinner .container_inner .content_inner .main_img .main_control:nth-child(1):hover {
   transform: translateY(-50%) rotate(-90deg) scale(1.2);
@@ -58,7 +58,7 @@
   border-radius: 100%;
   padding: 5px;
   color: #333;
-  transition: 0.3s;
+  transition: 0.3s 0.3s;
 }
 .shopinner .container_inner .content_inner .main_img .main_control:nth-child(2):hover {
   transform: translateY(-50%) rotate(90deg) scale(1.2);
@@ -82,9 +82,11 @@
   width: 100%;
 }
 .shopinner .container_inner .content_inner .main_img:hover .main_control:nth-child(1) {
+  transition: 0.3s;
   left: 5px;
 }
 .shopinner .container_inner .content_inner .main_img:hover .main_control:nth-child(2) {
+  transition: 0.3s;
   right: 5px;
 }
 .shopinner .container_inner .content_inner .other_img {
@@ -97,6 +99,7 @@
   width: 20%;
   margin-top: 5px;
   margin-right: 10px;
+  transition: 0.3s;
 }
 .shopinner .container_inner .content_inner .other_img .img_group .img_list img {
   cursor: pointer;

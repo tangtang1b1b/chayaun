@@ -46,7 +46,7 @@ $color_green:#00A26A
                     border-radius: 100%
                     padding: 5px
                     color: $color_black
-                    transition: 0.3s
+                    transition: 0.3s 0.3s
                     &:hover
                         transform: translateY(-50%) rotate(-90deg) scale(1.2)
                         opacity: 1
@@ -64,7 +64,7 @@ $color_green:#00A26A
                     border-radius: 100%
                     padding: 5px
                     color: $color_black
-                    transition: 0.3s
+                    transition: 0.3s 0.3s
                     &:hover
                         transform: translateY(-50%) rotate(90deg) scale(1.2)
                         opacity: 1
@@ -82,8 +82,10 @@ $color_green:#00A26A
                         box-sizing: border-box
                         width: 100%
             & .main_img:hover .main_control:nth-child(1)
+                transition: 0.3s
                 left: 5px
             & .main_img:hover .main_control:nth-child(2)
+                transition: 0.3s
                 right: 5px
             & .other_img
                 padding: 0px 50px
@@ -93,6 +95,7 @@ $color_green:#00A26A
                         width: 20%
                         margin-top: 5px
                         margin-right: 10px
+                        transition: 0.3s
                         & img
                             cursor: pointer
                             box-sizing: border-box
