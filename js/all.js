@@ -49,3 +49,30 @@ $("#ju").click(function(){
     $(".jufr").addClass("dunjuadd");
     $(".forget").css("display","none")
 });
+
+
+let j =0;
+$(".hamber").click(function(){
+    j++;
+    $(".hambox:nth-child(1)").css("animation","hambarbang1 0.5s both");
+    $(".hambox:nth-child(2)").css("animation","rotat 0.7s 0.5s both");
+    $(".hambox:nth-child(3)").css("animation","rotat2 0.7s 0.5s both");
+    $(".hambox:nth-child(4)").css("animation","hambarbang1 0.5s both");
+    $(".list_item a").css("display","block");
+    $(".list_group").animate({opacity:"1"},500);
+    setTimeout(function(){
+        $(".list_item a").css("opacity","1");
+    },500);
+
+    if(j%2==0){
+        $(".hambox:nth-child(1)").css("animation","hambarbang2 0.5s 0.7s both");
+        $(".hambox:nth-child(2)").css("animation","rotat12 0.7s both");
+        $(".hambox:nth-child(3)").css("animation","rotat23 0.7s both");
+        $(".hambox:nth-child(4)").css("animation","hambarbang2 0.5s 0.7s both");
+        $(".list_item a").css("opacity","0");
+        $(".list_group").animate({opacity:"0"},500);
+        setTimeout(function(){
+            $(".list_item a").css("display","none");
+        },500);
+    }
+});
