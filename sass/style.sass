@@ -11,10 +11,15 @@ $color_green:#00A26A
 *
     // outline: solid 1px
 
+body
+    overflow-x: hidden
+
 .banner_row
     width: 100%
+    overflow: hidden
     & .banner_go
         width: 100%
+        overflow: hidden
         & ul
             position: relative
             width: 400%
@@ -33,6 +38,7 @@ $color_green:#00A26A
         width: 400%
         display: flex
         bottom: 10%
+        overflow: hidden
         & .banner_inner_box
             position: relative
             max-width: 1200px
@@ -119,7 +125,6 @@ $color_green:#00A26A
         & .barbody
             border-radius: 5px
             margin: auto
-            animation: bar 5s linear infinite
             background-color: $color_green
             height: 100%
 

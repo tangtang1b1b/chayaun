@@ -1,6 +1,6 @@
 let banner = document.querySelectorAll("#bang");
 let banbox = document.querySelector(".banner_inner_box_group");
-let arr = document.querySelectorAll("#bang li");
+let arr = document.querySelectorAll("#bang .bangli");
 let index = 0;
 
 $(banner).css("transition","1s ease");
@@ -26,10 +26,11 @@ function play(){
     }
     // $(banner).css("transform","scale(1)");
 }
-
+$(".barbody").css("animation","bar 5s linear infinite");
 setInterval(function(){
     index++;
     play();
+    $(".barbody").css("animation","bar 5s linear infinite");
 },5000);
 
 // console.log(arr.length);

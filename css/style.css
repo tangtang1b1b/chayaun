@@ -1,8 +1,14 @@
+body {
+  overflow-x: hidden;
+}
+
 .banner_row {
   width: 100%;
+  overflow: hidden;
 }
 .banner_row .banner_go {
   width: 100%;
+  overflow: hidden;
 }
 .banner_row .banner_go ul {
   position: relative;
@@ -27,6 +33,7 @@
   width: 400%;
   display: flex;
   bottom: 10%;
+  overflow: hidden;
 }
 .banner_row .banner_inner_box_group .banner_inner_box {
   position: relative;
@@ -129,8 +136,6 @@
 .banner_row .timebar .barbody {
   border-radius: 5px;
   margin: auto;
-  -webkit-animation: bar 5s linear infinite;
-          animation: bar 5s linear infinite;
   background-color: #00A26A;
   height: 100%;
 }
