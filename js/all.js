@@ -54,16 +54,6 @@ $("#ju").click(function(){
 let j =0;
 $(".hamber").click(function(){
     j++;
-    $(".hambox:nth-child(1)").css("animation","hambarbang1 0.5s both");
-    $(".hambox:nth-child(2)").css("animation","rotat 0.7s 0.5s both");
-    $(".hambox:nth-child(3)").css("animation","rotat2 0.7s 0.5s both");
-    $(".hambox:nth-child(4)").css("animation","hambarbang1 0.5s both");
-    $(".list_item a").css("display","block");
-    $(".list_group").animate({opacity:"1"},500);
-    setTimeout(function(){
-        $(".list_item a").css("opacity","1");
-    },500);
-
     if(j%2==0){
         $(".hambox:nth-child(1)").css("animation","hambarbang2 0.5s 0.7s both");
         $(".hambox:nth-child(2)").css("animation","rotat12 0.7s both");
@@ -74,5 +64,17 @@ $(".hamber").click(function(){
         setTimeout(function(){
             $(".list_item a").css("display","none");
         },500);
+        
+    }else{
+        $(".hambox:nth-child(1)").css("animation","hambarbang1 0.5s both");
+        $(".hambox:nth-child(2)").css("animation","rotat 0.7s 0.5s both");
+        $(".hambox:nth-child(3)").css("animation","rotat2 0.7s 0.5s both");
+        $(".hambox:nth-child(4)").css("animation","hambarbang1 0.5s both");
+        $(".list_group").css("left","0");
+        $(".list_item a").css("display","block");
+        $(".list_group").animate({opacity:"1"},500);
+        setTimeout(function(){
+            $(".list_item a").css("opacity","1");
+        },250);
     }
 });
