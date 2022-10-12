@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   max-width: 1200px;
   margin: auto;
   margin-bottom: 60px;
+  padding: 20px;
 }
 
 .title_area li {
