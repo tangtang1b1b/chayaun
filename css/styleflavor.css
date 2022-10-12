@@ -152,3 +152,39 @@ body, html {
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(3) a {
   color: rgba(247, 247, 247, 0.5);
 }
+
+@media screen and (max-width: 768px) {
+  .main_area {
+    padding-top: 80px;
+    width: 100%;
+    background-color: #f7f7f7;
+  }
+  .main_area .container_main {
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+  }
+  .main_area .container_main .content_main {
+    width: 100%;
+    padding: 0px;
+  }
+  .main_area .container_main .content_main .content_try_group {
+    padding-bottom: 100px;
+  }
+  .little_kind {
+    padding: 50px 0px 100px;
+    width: 100%;
+    background-color: #f7f7f7;
+  }
+  .little_kind .container_kind {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .little_kind .container_kind .content_kind {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+  }
+}

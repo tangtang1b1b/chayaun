@@ -134,3 +134,36 @@ body,html
 
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(3) a 
     color: rgba($color_white,0.5)
+
+
+
+
+@media screen and (max-width:768px)
+    .main_area
+        padding-top: 80px
+        width: 100%
+        background-color: $color_white
+        & .container_main
+            max-width: 1200px
+            margin: auto
+            display: block
+            & .content_main
+                width: 100%
+                padding: 0px
+                & .content_try_group
+                    padding-bottom: 100px
+
+    .little_kind
+        padding: 50px 0px 100px 
+        width: 100%
+        background-color: $color_white
+        
+        & .container_kind
+            max-width: 1200px
+            margin: auto
+            display: flex
+            flex-wrap: wrap
+            & .content_kind
+                box-sizing: border-box
+                padding: 10px
+                width: 100%
