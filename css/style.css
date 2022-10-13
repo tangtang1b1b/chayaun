@@ -1,14 +1,10 @@
-body {
-  overflow-x: hidden;
-}
-
 .banner_row {
   width: 100%;
   overflow: hidden;
 }
 .banner_row .banner_go {
+  position: relative;
   width: 100%;
-  overflow: hidden;
 }
 .banner_row .banner_go ul {
   position: relative;
@@ -28,14 +24,13 @@ body {
      object-position: center;
   vertical-align: top;
 }
-.banner_row .banner_inner_box_group {
+.banner_row .banner_go .box_group .banner_inner_box_group {
   position: absolute;
   width: 400%;
   display: flex;
   bottom: 10%;
-  overflow: hidden;
 }
-.banner_row .banner_inner_box_group .banner_inner_box {
+.banner_row .banner_go .box_group .banner_inner_box_group .banner_inner_box {
   position: relative;
   max-width: 1200px;
   margin: auto;
@@ -43,21 +38,21 @@ body {
   padding: 0 20px;
   display: flex;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner {
+.banner_row .banner_go .box_group .banner_inner_box_group .banner_inner_box .banner_inner {
   position: relative;
+  margin-top: 10px;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .main_new {
+.banner_row .banner_go .box_group .banner_inner_box_group .banner_inner_box .banner_inner .main_new {
   text-shadow: 1px 1px 2px black;
   color: #f7f7f7;
   font-size: 16px;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .main_pro {
+.banner_row .banner_go .box_group .banner_inner_box_group .banner_inner_box .banner_inner .main_pro {
   text-shadow: 1px 1px 2px black;
   color: #f7f7f7;
   font-size: 48px;
-  margin-top: 10px;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -73,17 +68,17 @@ body {
   overflow: hidden;
   text-decoration: none;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more .read_more_text {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more .read_more_text {
   color: #333;
   font-weight: bold;
   overflow: hidden;
   height: 20px;
   transition: 0.2s;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more .read_more_text p {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more .read_more_text p {
   font-size: 22px;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more .read_go {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more .read_go {
   position: absolute;
   color: #333;
   font-size: 26px;
@@ -93,10 +88,10 @@ body {
   right: 0;
   transform: translateX(40px) translateY(-50%);
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more .read_go .key_item {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more .read_go .key_item {
   width: 75px;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more::before {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -110,19 +105,19 @@ body {
   transform: scale(0) translateY(-50%);
   transition: 0.2s;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more:hover::before {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more:hover::before {
   transform: scale(1) translateY(-50%);
   transition: 0.2s;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more:hover .read_more_text {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more:hover .read_more_text {
   transition: 0.2s;
   transform: translateX(20px);
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more:hover .read_go {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more:hover .read_go {
   transform: translateX(75px) translateY(-50%);
   transition: 0.2s;
 }
-.banner_row .banner_inner_box_group .banner_inner_box .banner_inner .read_more:hover {
+.banner_row .banner_go .box_group .banner_inner_box_group .read_more:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   -webkit-animation: movedown 0.2s;
           animation: movedown 0.2s;

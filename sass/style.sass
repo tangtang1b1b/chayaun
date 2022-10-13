@@ -12,14 +12,14 @@ $color_green:#00A26A
     // outline: solid 1px
 
 body
-    overflow-x: hidden
+    // overflow-x: hidden
 
 .banner_row
     width: 100%
     overflow: hidden
     & .banner_go
+        position: relative
         width: 100%
-        overflow: hidden
         & ul
             position: relative
             width: 400%
@@ -33,30 +33,30 @@ body
                     object-fit: cover
                     object-position: center
                     vertical-align: top
-    & .banner_inner_box_group
-        position: absolute
-        width: 400%
-        display: flex
-        bottom: 10%
-        overflow: hidden
-        & .banner_inner_box
-            position: relative
-            max-width: 1200px
-            margin: auto
-            width: 100%
-            padding: 0 20px
-            display: flex
-            & .banner_inner
-                position: relative
-                & .main_new
-                    text-shadow: 1px 1px 2px black
-                    color: $color_white
-                    font-size: 16px   
-                & .main_pro
-                    text-shadow: 1px 1px 2px black
-                    color: $color_white
-                    font-size: 48px
-                    margin-top: 10px
+        & .box_group
+            & .banner_inner_box_group
+                position: absolute
+                width: 400%
+                display: flex
+                bottom: 10%
+                & .banner_inner_box
+                    position: relative
+                    max-width: 1200px
+                    margin: auto
+                    width: 100%
+                    padding: 0 20px
+                    display: flex
+                    & .banner_inner
+                        position: relative
+                        & .main_new
+                            text-shadow: 1px 1px 2px black
+                            color: $color_white
+                            font-size: 16px   
+                        & .main_pro
+                            text-shadow: 1px 1px 2px black
+                            color: $color_white
+                            font-size: 48px
+                        margin-top: 10px
                 // 按鈕
                 & .read_more
                     position: relative
@@ -185,8 +185,6 @@ body
                 display: flex
                 justify-content: center
                 left: 700px
-                // transform: translateX(30vw)
-                // left: 30vw
                 & #followbtn
                     user-select: none
                     transform: translate(-50%,-50%)
@@ -324,12 +322,10 @@ body
         
         & .artisan_photo_item:nth-child(1)
             position: relative
-            // width: 33.333333%
             top: 150px
             right: 28%
         & .artisan_photo_item:nth-child(2)
             position: relative
-            // width: 33.333333%
             top: -150px
             left: 28%
         & .artisan_photo_content 
@@ -653,3 +649,32 @@ body
                         transform: scale(1.2)
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(1) a 
     color: rgba($color_white,0.5)
+
+
+
+@media screen and (max-width:768px)
+    // .banner_row
+    //     width: 100%
+    //     overflow: hidden
+    //     & .banner_go
+    //         width: 400%
+    //         overflow: hidden
+    //         & ul
+    //             position: relative
+    //             width: 400%
+    //             display: flex
+    //             & li 
+    //                 position: relative
+    //                 width: 100%
+    //                 & .bangli + .bangli
+    //                     display: none
+    //                         vertical-align: top
+    //     & .banner_inner_box_group
+    //         position: absolute
+    //         width: 100%
+    //         display: flex
+    //         bottom: 10%
+    //         & .banner_inner_box + .banner_inner_box
+    //             display: none
+
+                        
