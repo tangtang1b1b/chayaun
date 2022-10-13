@@ -25,7 +25,7 @@ function play(){
                 $(banner).css("left","-"+(100*index)+"%");
                 $(banbox).css("transition","0s");
                 $(banbox).css("left","-"+(100*index)+"%");
-            },500);
+            },800);
         }
     }
 }
