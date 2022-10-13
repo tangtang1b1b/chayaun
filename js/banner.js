@@ -3,7 +3,7 @@ let banbox = document.querySelector(".banner_inner_box_group");
 let arr = document.querySelectorAll("#bang .bangli");
 let index = 0;
 
-$(banner).css("transition","0.5s ease");
+$(banner).css("transition","0.8s ease");
 play();
 function play(){
     
@@ -11,7 +11,7 @@ function play(){
     if($(window).width()>768){
         $(".bangli").css("animation","small 5s linear infinite");
     }
-    $(banner).css("transition","0.5s ease");
+    $(banner).css("transition","0.8s ease");
     $(banbox).css("transition","0.6s 0.2s ease");
     
     
