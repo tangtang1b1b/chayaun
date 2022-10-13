@@ -221,3 +221,118 @@ body
 
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(2) a 
     color: rgba($color_white,0.5)
+
+
+
+@media screen and (max-width:1024px)
+    .product_area
+        background-color: $color_white
+        width: 100%
+        & .container_product_area
+            max-width: 1200px
+            margin: auto
+            display: flex
+            & .content_choose
+                border-right: solid 1px rgba($color_black,0.1)
+                padding-top: 40px
+                width: 20%
+                position: relative
+                & .choose_group
+                    position: sticky
+                    top: 100px
+                    & li:hover > a 
+                        color: $color_main
+                    & .choose_item
+                        position: relative
+                        margin: 25px 0px
+                        & a
+                            cursor: pointer 
+                            transition: 0.3s
+                            font-size: 16px
+                            text-decoration: none
+                            color: $color_black
+                        & i 
+                            position: absolute
+                            font-size: 12px
+                            transform: rotate(180deg)
+                            right: 10px
+                        & .up
+                            transform: rotate(0deg)
+                        & .item_group
+                            display: none
+                            position: relative
+                            margin-left: 20px
+                            top: 100%
+                            & .item_list
+                                padding-top: 20px
+            & .content_buy
+                width: 80%
+                & .content_buy_area
+                    display: flex
+                    flex-wrap: wrap
+                    & li 
+                        width: 50%
+                        padding: 20px
+                        box-sizing: border-box
+                        & .buy_item
+                            position: relative
+                            width: 100%
+                            box-sizing: border-box      
+                            margin-bottom: 30px
+                            padding: 5px
+@media screen and (max-width:768px)
+    .product_area
+        background-color: $color_white
+        width: 100%
+        & .container_product_area
+            max-width: 1200px
+            margin: auto
+            display: flex
+            & .content_choose
+                border-right: solid 1px rgba($color_black,0.1)
+                padding-top: 40px
+                width: 20%
+                position: relative
+                & .choose_group
+                    position: sticky
+                    top: 100px
+                    & li:hover > a 
+                        color: $color_main
+                    & .choose_item
+                        position: relative
+                        margin: 25px 0px
+                        & a
+                            cursor: pointer 
+                            transition: 0.3s
+                            font-size: 16px
+                            text-decoration: none
+                            color: $color_black
+                        & i 
+                            position: absolute
+                            font-size: 12px
+                            transform: rotate(180deg)
+                            right: 10px
+                        & .up
+                            transform: rotate(0deg)
+                        & .item_group
+                            display: none
+                            position: relative
+                            margin-left: 20px
+                            top: 100%
+                            & .item_list
+                                padding-top: 20px
+            & .content_buy
+                width: 80%
+                & .content_buy_area
+                    display: flex
+                    flex-wrap: wrap
+                    & li 
+                        width: 100%
+                        padding: 20px
+                        box-sizing: border-box
+                        & .buy_item
+                            position: relative
+                            width: 100%
+                            box-sizing: border-box      
+                            margin-bottom: 30px
+                            padding: 5px
