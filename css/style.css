@@ -12,6 +12,7 @@
   display: flex;
 }
 .banner_row .banner_go ul li {
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
@@ -23,6 +24,38 @@
   -o-object-position: center;
      object-position: center;
   vertical-align: top;
+}
+@-webkit-keyframes small {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes small {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@-webkit-keyframes back {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes back {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .banner_row .banner_go .box_group .banner_inner_box_group {
   position: absolute;
@@ -223,7 +256,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  left: 700px;
+  left: 40%;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn {
   -webkit-user-select: none;
@@ -237,6 +270,7 @@
   border-radius: 100%;
   transition: opacity 0.3s;
   pointer-events: none;
+  z-index: 1;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn img {
   width: 100%;
@@ -251,15 +285,18 @@
           user-select: none;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card {
+  position: relative;
   text-decoration: none;
   color: #333;
 }
-.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .product_else {
-  pointer-events: none;
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .product_else {
   width: 430px;
   height: 430px;
+  overflow: hidden;
+  border-radius: 20px;
 }
-.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .tea_img {
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .product_else .tea_img {
+  transition: 1s;
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -269,9 +306,40 @@
      object-position: center 80%;
   box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.3);
 }
-.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .tea_img_name {
-  margin-top: 30px;
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .product_else:hover .tea_img {
+  transform: scale(1.05);
+}
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name {
+  width: 100%;
+  position: absolute;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car {
+  transition: 0.3s;
+  width: 20%;
+  font-size: 14px;
+  color: #f7f7f7;
+  background-color: #00A26A;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car .material-symbols-outlined {
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: 0;
+  color: #f7f7f7;
+  padding: 7px;
+  border-radius: 100%;
+  font-size: 18px;
+}
+.derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car:hover {
+  background-color: #333;
 }
 .derivative_row .derivative_inner_box .derivative_number {
   position: absolute;
@@ -364,6 +432,39 @@
 }
 .derivative_row .derivative_inner_box .read .read_inner .read_more:hover .circle {
   color: #f7f7f7;
+}
+
+.shake {
+  -webkit-animation: shake 2s infinite;
+          animation: shake 2s infinite;
+}
+@-webkit-keyframes shake {
+  10% {
+    transform: scale(1.1) rotate(1deg);
+  }
+  20% {
+    transform: scale(1.1) rotate(-1deg);
+  }
+  30% {
+    transform: scale(1.1) rotate(1deg);
+  }
+  40% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes shake {
+  10% {
+    transform: scale(1.1) rotate(1deg);
+  }
+  20% {
+    transform: scale(1.1) rotate(-1deg);
+  }
+  30% {
+    transform: scale(1.1) rotate(1deg);
+  }
+  40% {
+    transform: scale(1) rotate(0deg);
+  }
 }
 @-webkit-keyframes upup {
   0% {

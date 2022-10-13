@@ -31,6 +31,7 @@ $(rowbox).mousedown(function (e) {
     $(this).css("cursor","grabbing");
     check = true; 
     downpagex = e.pageX;
+    e.preventDefault();
     $(document).mousemove(move);
 });
 
@@ -44,30 +45,55 @@ $(rowbox).mouseup(function (e) {
     check = false;
     $(document).off("mousemove");
 });
-
+let shake = document.querySelectorAll(".derivative_list .derivative_list_card .tea_img_name .derivative_car");
+console.log(shake[7]);
 function move(e){
     if(check && e.pageY>checktop && e.pageY<(checktop+checkdown)){
         let x = e.pageX - downpagex;
         if((offsetpagex + x)<180 && (offsetpagex + x)>-3500){
-            $(rowbox).css("left",""+(700 + offsetpagex + x)+"px");
-            if((offsetpagex + x) < -300 && (offsetpagex + x) > -750){
-                $(numb).text("02");
-            }else if((offsetpagex + x) < -750 && (offsetpagex + x) > -1200){
-                $(numb).text("03");
-            }else if((offsetpagex + x) < -1200 && (offsetpagex + x) > -1650){
-                $(numb).text("04");
-            }else if((offsetpagex + x) < -1650 && (offsetpagex + x) > -2100){
-                $(numb).text("05");
-            }else if((offsetpagex + x) < -2100 && (offsetpagex + x) > -2550){
-                $(numb).text("06");
-            }else if((offsetpagex + x) < -2550 && (offsetpagex + x) > -3000){
-                $(numb).text("07");
-            }else if((offsetpagex + x) < -3000 && (offsetpagex + x) > -4000){
-                $(numb).text("08");
-            }else{
-                $(numb).text("01");
+            $(rowbox).css("transform","translateX("+(offsetpagex + x)+"px)");
+            
+            
+            for(let i = 0;i<=8;i++){
+                
+                if((offsetpagex + x) < -300 && (offsetpagex + x) > -750){
+                    $(numb).text("02");
+                    $(shake[i]).removeClass("shake");
+                    $(shake[1]).addClass("shake");
+                }else if((offsetpagex + x) < -750 && (offsetpagex + x) > -1200){
+                    $(numb).text("03");
+                    $(shake[i]).removeClass("shake");
+                    $(shake[2]).addClass("shake");
+                    
+                }else if((offsetpagex + x) < -1200 && (offsetpagex + x) > -1650){
+                    $(numb).text("04");
+                    $(shake[3]).addClass("shake");
+                    $(shake[i]).removeClass("shake");
+                }else if((offsetpagex + x) < -1650 && (offsetpagex + x) > -2100){
+                    $(numb).text("05");
+                    $(shake[4]).addClass("shake");
+                    $(shake[i]).removeClass("shake");
+                }else if((offsetpagex + x) < -2100 && (offsetpagex + x) > -2550){
+                    $(numb).text("06");
+                    $(shake[5]).addClass("shake");
+                    $(shake[i]).removeClass("shake");
+                }else if((offsetpagex + x) < -2550 && (offsetpagex + x) > -3000){
+                    $(numb).text("07");
+                    $(shake[6]).addClass("shake");
+                    $(shake[i]).removeClass("shake");
+                }else if((offsetpagex + x) < -3000 && (offsetpagex + x) > -4000){
+                    $(numb).text("08");
+                    $(shake[7]).addClass("shake");
+                    $(shake[i]).removeClass("shake");
+                }else{
+                    $(numb).text("01");
+                    $(shake[0]).addClass("shake");
+                    $(shake[i]).removeClass("shake");
+                }
+                
             }
         }
     }
+    
 }
 // console.log(checkdown);
