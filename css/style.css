@@ -30,7 +30,7 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 @keyframes small {
@@ -38,23 +38,7 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(1.05);
-  }
-}
-@-webkit-keyframes back {
-  0% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes back {
-  0% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
+    transform: scale(1.02);
   }
 }
 .banner_row .banner_go .box_group .banner_inner_box_group {
@@ -321,7 +305,7 @@
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car {
   transition: 0.3s;
-  width: 20%;
+  width: 22%;
   font-size: 14px;
   color: #f7f7f7;
   background-color: #00A26A;
@@ -440,13 +424,13 @@
 }
 @-webkit-keyframes shake {
   10% {
-    transform: scale(1.1) rotate(1deg);
+    transform: scale(1.15) rotate(1deg);
   }
   20% {
-    transform: scale(1.1) rotate(-1deg);
+    transform: scale(1.15) rotate(-1deg);
   }
   30% {
-    transform: scale(1.1) rotate(1deg);
+    transform: scale(1.15) rotate(1deg);
   }
   40% {
     transform: scale(1) rotate(0deg);
@@ -454,13 +438,13 @@
 }
 @keyframes shake {
   10% {
-    transform: scale(1.1) rotate(1deg);
+    transform: scale(1.15) rotate(1deg);
   }
   20% {
-    transform: scale(1.1) rotate(-1deg);
+    transform: scale(1.15) rotate(-1deg);
   }
   30% {
-    transform: scale(1.1) rotate(1deg);
+    transform: scale(1.15) rotate(1deg);
   }
   40% {
     transform: scale(1) rotate(0deg);

@@ -45,8 +45,10 @@ $(rowbox).mouseup(function (e) {
     check = false;
     $(document).off("mousemove");
 });
+
 let shake = document.querySelectorAll(".derivative_list .derivative_list_card .tea_img_name .derivative_car");
-console.log(shake[7]);
+let numbig = 
+$(shake[0]).addClass("shake");
 function move(e){
     if(check && e.pageY>checktop && e.pageY<(checktop+checkdown)){
         let x = e.pageX - downpagex;
