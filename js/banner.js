@@ -6,6 +6,10 @@ let index = 0;
 $(banner).css("transition","1s ease");
 play();
 function play(){
+    
+        
+        
+    $(".barbody").css("animation","bar 5s linear infinite");
     $(banner).css("transition","1s ease");
     $(banbox).css("transition","0.8s 0.2s ease");
     // $(banner).css("transform","scale(1)");
@@ -24,13 +28,22 @@ function play(){
             },1000);
         }
     }
+    
     // $(banner).css("transform","scale(1)");
 }
-$(".barbody").css("animation","bar 5s linear infinite");
+$(window).resize(function() {
+    windowSize();
+});
+
+// function bargo(){
+//     if($(window).width()>768){
+//         $(".barbody").css("animation","bar 5s linear infinite");
+//     }
+// }
+// $(".barbody").css("animation","bar 5s linear infinite");
 setInterval(function(){
     index++;
     play();
-    $(".barbody").css("animation","bar 5s linear infinite");
 },5000);
 
 // console.log(arr.length);
