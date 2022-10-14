@@ -30,7 +30,7 @@ $(rowbox).mousedown(function (e) {
     // check = true; 
     downpagex = e.pageX;
     e.preventDefault();
-    $(document).mousemove(move);
+    $(rowbox).mousemove(move);
 });
 
 $(rowbox).mouseup(function (e) {
@@ -41,7 +41,7 @@ $(rowbox).mouseup(function (e) {
     }
     
     // check = false;
-    $(document).off("mousemove");
+    $(rowbox).off("mousemove");
 });
 
 let shake = document.querySelectorAll(".derivative_list .derivative_list_card .tea_img_name .derivative_car");
