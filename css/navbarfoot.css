@@ -258,9 +258,6 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   transition: 0.3s;
 }
   /* 頁尾 */
-  .fake_foot_row {
-    /* margin-bottom: 561px; */
-  }
   
   .foot_row {
     /* position: fixed; */
