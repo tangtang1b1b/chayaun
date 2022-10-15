@@ -12,13 +12,23 @@ $(window).on("mousemove",function(e){
     $("#followbtn").css("left",x);
     $("#followbtn").css("top",y);
 });
+// $('#special_group').mousemove(function(e){ 
+//     let x = e.pageX - $("#special_group").offset().left;
+//     let y = e.pageY - $("#special_group").offset().top;
+//     $("#followbtn").css({
+//         left:x,
+//         top:y,
+//         opacity:'1',
+//     });
+//     }).mouseleave(function(){
+//         $("#followbtn").css("opacity","0");
+//     });
 
 
 let rowbox = document.querySelector("#special_group");
 let container = document.querySelectorAll(".derivative_list_card");
 let downpagex = 0;
 let offsetpagex = 0;
-let check = false;
 let checktop = $(rowbox).offset().top;
 let checkdown = $(rowbox).outerHeight();
 let numb = document.querySelector(".derivative_number_var");
@@ -27,9 +37,9 @@ let numb = document.querySelector(".derivative_number_var");
 
 $(rowbox).mousedown(function (e) {
     $(this).css("cursor","grabbing");
-    // check = true; 
     downpagex = e.pageX;
     e.preventDefault();
+    
     $(rowbox).mousemove(move);
 });
 
@@ -37,10 +47,8 @@ $(rowbox).mouseup(function (e) {
     if(e.pageY>checktop && e.pageY<(checktop+checkdown)){
         $(this).css("cursor","pointer");
         offsetpagex += e.pageX - downpagex;
-        
     }
     
-    // check = false;
     $(rowbox).off("mousemove");
 });
 
@@ -50,8 +58,7 @@ $(shake[0]).addClass("shake");
 function move(e){
     if(e.pageY>checktop && e.pageY<(checktop+checkdown)){
         let x = e.pageX - downpagex;
-        if((offsetpagex + x)<180 && (offsetpagex + x)>-3500){
-            // $(rowbox).css("transform","translateX("+(offsetpagex + x)+"px)");
+        if((offsetpagex + x)*2.3 < 180 && (offsetpagex + x)*2.3 > -3500){
             $(rowbox).css("transform","translateX("+(offsetpagex + x)*2.3 +"px)");
             
             
