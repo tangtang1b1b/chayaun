@@ -54,19 +54,30 @@ $("#ju").click(function(){
 let j =0;
 $(".hamber").click(function(){
     j++;
+    
     if(j%2==0){
-        $(".hambox:nth-child(1)").css("animation","hambarbang2 0.5s 0.7s both");
-        $(".hambox:nth-child(2)").css("animation","rotat12 0.7s both");
-        $(".hambox:nth-child(3)").css("animation","rotat23 0.7s both");
-        $(".hambox:nth-child(4)").css("animation","hambarbang2 0.5s 0.7s both");
+        $(".hambox:nth-child(1)").css("animation","hambarbang2 0.4s 0.6s both");
+        $(".hambox:nth-child(2)").css("animation","rotat12 0.6s both");
+        $(".hambox:nth-child(3)").css("animation","rotat23 0.6s both");
+        $(".hambox:nth-child(4)").css("animation","hambarbang2 0.4s 0.6s both");
         $(".list_group").removeClass("show");
-        $(".icon_group").removeClass("show");
+        setTimeout(function(){
+            $(".list_group").css("left","-100%");
+        },700);
     }else{
-        $(".hambox:nth-child(1)").css("animation","hambarbang1 0.5s both");
-        $(".hambox:nth-child(2)").css("animation","rotat 0.7s 0.5s both");
-        $(".hambox:nth-child(3)").css("animation","rotat2 0.7s 0.5s both");
-        $(".hambox:nth-child(4)").css("animation","hambarbang1 0.5s both");
+        $(".hambox:nth-child(1)").css("animation","hambarbang1 0.4s both");
+        $(".hambox:nth-child(2)").css("animation","rotat 0.6s 0.4s both");
+        $(".hambox:nth-child(3)").css("animation","rotat2 0.6s 0.4s both");
+        $(".hambox:nth-child(4)").css("animation","hambarbang1 0.4s both");
         $(".list_group").addClass("show");
-        $(".icon_group").addClass("show");
+        $(".list_group").css("left","0%");
     }
 });
+$(window).resize(function() {
+    if($(window).outerWidth()>1024){
+        $(".list_group").css({
+            left: "",
+        });
+    }
+});
+console.log($(window).outerWidth());
