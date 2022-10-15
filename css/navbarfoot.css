@@ -259,13 +259,13 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
 }
   /* 頁尾 */
   .fake_foot_row {
-    margin-bottom: 561px;
+    /* margin-bottom: 561px; */
   }
   
   .foot_row {
-    position: fixed;
-    z-index: -1;
-    bottom: 0;
+    /* position: fixed; */
+    /* z-index: -1; */
+    /* bottom: 0; */
     width: 100%;
     background-color: #2A9D8F;
     padding-top: 60px;
