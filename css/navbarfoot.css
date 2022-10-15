@@ -534,6 +534,9 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     width: 100%;
     padding-bottom: 60px;
   }
+  .foot_row .foot_inner_box .foot_inner_top .foot_inner .main_pro {
+    font-size: 26px;
+  }
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact {
     display: none;
   }
@@ -558,12 +561,14 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list{
     width: 50%;
+    font-weight: bold;
+    font-size: 18px;
     padding-bottom: 40px;
     text-align: center;
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list a {
     color: #fafafa;
-    font-size: 18px;
+    font-size: 22px;
     transition: 0.3s;
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list {
