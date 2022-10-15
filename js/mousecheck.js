@@ -26,7 +26,6 @@ $(window).on("mousemove",function(e){
 
 
 let rowbox = document.querySelector("#special_group");
-let container = document.querySelectorAll(".derivative_list_card");
 let downpagex = 0;
 let offsetpagex = 0;
 let checktop = $(rowbox).offset().top;
@@ -37,15 +36,17 @@ let numb = document.querySelector(".derivative_number_var");
 
 $(rowbox).mousedown(function (e) {
     $(this).css("cursor","grabbing");
+    $(".tea_img").css("cursor","grabbing");
     downpagex = e.pageX;
     e.preventDefault();
-    
+
     $(rowbox).mousemove(move);
 });
 
 $(rowbox).mouseup(function (e) {
     if(e.pageY>checktop && e.pageY<(checktop+checkdown)){
         $(this).css("cursor","pointer");
+        $(".tea_img").css("cursor","pointer");
         offsetpagex += e.pageX - downpagex;
     }
     

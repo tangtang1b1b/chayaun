@@ -314,7 +314,7 @@
   width: 22%;
   font-size: 14px;
   color: #f7f7f7;
-  background-color: #00A26A;
+  background-color: #333;
   border-radius: 20px;
   text-decoration: none;
 }
@@ -329,7 +329,7 @@
   font-size: 18px;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car:hover {
-  background-color: #333;
+  background-color: #00A26A;
 }
 .derivative_row .derivative_inner_box .derivative_number {
   position: absolute;
@@ -430,30 +430,30 @@
 }
 @-webkit-keyframes shake {
   10% {
-    transform: scale(1.15) rotate(1deg);
+    transform: scale(1.15);
   }
   20% {
-    transform: scale(1.15) rotate(-1deg);
+    transform: scale(1.15);
   }
   30% {
-    transform: scale(1.15) rotate(1deg);
+    transform: scale(1.15);
   }
   40% {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
   }
 }
 @keyframes shake {
   10% {
-    transform: scale(1.15) rotate(1deg);
+    transform: scale(1.15);
   }
   20% {
-    transform: scale(1.15) rotate(-1deg);
+    transform: scale(1.15);
   }
   30% {
-    transform: scale(1.15) rotate(1deg);
+    transform: scale(1.15);
   }
   40% {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1);
   }
 }
 @-webkit-keyframes upup {
