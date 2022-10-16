@@ -12,20 +12,24 @@ $(window).on("scroll",function(e){
 
 let i=0;
 $("#choosesubcribe").click(function(){
-    $("#subcribe").slideToggle();
-    $("#go").addClass("up");
-    i++;
-    if(i%2==0){
-        $("#go").removeClass("up");
+    if($(window).width()>1024){
+        $("#subcribe").slideToggle();
+        $("#go").addClass("up");
+        i++;
+        if(i%2==0){
+            $("#go").removeClass("up");
+        }
     }
 });
 let y=0;
 $("#choosemonth").click(function(){
-    $("#month").slideToggle();
-    $("#gogo").addClass("up");
-    y++;
-    if(y%2==0){
-        $("#gogo").removeClass("up");
+    if($(window).width()>1025){
+        $("#month").slideToggle();
+        $("#gogo").addClass("up");
+        y++;
+        if(y%2==0){
+            $("#gogo").removeClass("up");
+        }
     }
 });
 
@@ -73,11 +77,35 @@ $(".hamber").click(function(){
         $(".list_group").css("left","0%");
     }
 });
+
+let check = true;
+let check2 = true;
+$(".all_type").click(function(){
+    if(check && check2){
+        $(".choose_group").slideDown();
+        check =false;
+    }else if(!check && check2){
+        $(".choose_group").slideUp();
+        check = true;
+    }
+});
+$(".sert_big_clone").click(function(){
+    if(check2 && check){
+        $(".sert_group_clone").slideDown();
+        check2 =false;
+    }else if(!check2 && check){
+        $(".sert_group_clone").slideUp();
+        check2 = true;
+    }
+});
+
+// 重製區
 $(window).resize(function() {
-    if($(window).outerWidth()>1024){
+    if($(window).width()>1024){
         $(".list_group").css({
             left: "",
         });
+        $(".choose_group").css("display","");
     }
 });
-console.log($(window).outerWidth());
+// console.log($(window).outerWidth());

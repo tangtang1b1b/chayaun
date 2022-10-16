@@ -6,10 +6,10 @@ $color_green:#00A26A
     
  
 *
-    // outline: solid 1px 
+    // outline: solid 1px
 
 body
-
+    background-color: #ccc
 .list_item:nth-child(1) a
     border-bottom: solid 1px rgba($color_main,0.5)
 .first_img
@@ -75,9 +75,16 @@ body
             padding-top: 40px
             width: 20%
             position: relative
+            & .together
+                display: none
+                & .sert_big_clone
+                    display: none
+                & .all_type
+                    display: none
             & .choose_group
                 position: sticky
                 top: 100px
+                padding-bottom: 200px
                 & li:hover > a 
                     color: $color_main
                 & .choose_item
@@ -89,13 +96,15 @@ body
                         font-size: 16px
                         text-decoration: none
                         color: $color_black
+                    #gogogo
+                        display: none
                     & i 
                         position: absolute
                         font-size: 12px
                         transform: rotate(180deg)
                         right: 10px
                     & .up
-                         transform: rotate(0deg)
+                        transform: rotate(0deg)
                     & .item_group
                         display: none
                         position: relative
@@ -231,30 +240,86 @@ body
         & .container_product_area
             flex-wrap: wrap
             & .content_choose
-                display: none
                 border-right: none
                 padding-top: 40px
                 width: 100%
                 position: relative
+                & .together
+                    display: flex
+                    & .sert_big_clone
+                        cursor: pointer
+                        font-size: 20px
+                        width: 50%
+                        display: flex
+                        justify-content: space-evenly
+                        border-left: solid 1px rgba(3,3,3,0.3)
+                        & .sert_group_clone
+                            overflow: scroll
+                            box-sizing: border-box
+                            padding: 0px 10px
+                            border-radius: 20px 20px 0px 0px
+                            z-index: 1
+                            height: 18vh
+                            width: 100%
+                            position: fixed
+                            display: none
+                            flex-direction: column
+                            background-color: #f7f7f7
+                            box-shadow: 0px -1px 5px rgba(3,3,3,0.3)
+                            top: initial
+                            left: 0px
+                            bottom: 0px
+                            & .sert_list
+                                font-weight: normal
+                                padding: 20px 0px
+                                &:hover
+                                    color: $color_main
+                        & #popogo
+                            display: flex
+                            align-items: center
+                            font-size: 14px
+                            transform: rotate(180deg)
+                    & .all_type
+                        cursor: pointer
+                        width: 50%
+                        margin: auto
+                        display: flex
+                        justify-content: space-evenly
+                        font-size: 20px
+                        & #gogogo
+                            display: flex
+                            align-items: center
+                            font-size: 14px
+                            transform: rotate(180deg)
                 & .choose_group
-                    position: sticky
-                    top: 100px
+                    overflow: scroll
+                    box-sizing: border-box
+                    padding: 0px 10px
+                    border-radius: 20px 20px 0px 0px
+                    z-index: 1
+                    height: 18vh
+                    width: 100%
+                    position: fixed
+                    flex-direction: column
+                    background-color: #f7f7f7
+                    box-shadow: 0px -1px 5px rgba(3,3,3,0.3)
+                    top: initial
+                    bottom: 0px
+                    padding-bottom: 0px
                     & li:hover > a 
                         color: $color_main
                     & .choose_item
                         position: relative
-                        margin: 25px 0px
+                        margin: 0px 0px
+                        padding: 20px 0px
                         & a
                             cursor: pointer 
                             transition: 0.3s
-                            font-size: 16px
+                            font-size: 20px
                             text-decoration: none
                             color: $color_black
-                        & i 
-                            position: absolute
-                            font-size: 12px
-                            transform: rotate(180deg)
-                            right: 10px
+                        #gogo,#go
+                            display: none
                         & .up
                             transform: rotate(0deg)
                         & .item_group
@@ -274,11 +339,32 @@ body
                         padding: 20px
                         box-sizing: border-box
                         & .buy_item
-                            position: relative
+                            position: static
+                            display: flex
+                            flex-direction: column-reverse
                             width: 100%
                             box-sizing: border-box      
                             margin-bottom: 30px
                             padding: 5px
+                            & .shopcar
+                                box-sizing: border-box
+                                margin: auto
+                                z-index: 0
+                                opacity: 1
+                                width: 60%
+                                font-size: 14px
+                                padding: 10px 10px
+                                margin-top: 15px
+                                bottom: initial
+                                left: initial
+                                transform: none
+                                border-radius: 30px
+                                position: static
+                                &:hover
+                                    animation: none
+                        & .buy_item::before,.buy_item::after 
+                            content: none
+
 @media screen and (max-width:768px)
     .product_area
         & .container_product_area
@@ -286,27 +372,86 @@ body
             & .content_choose
                 border-right: solid 1px rgba($color_black,0.1)
                 padding-top: 40px
-                width: 20%
+                width: 100%
                 position: relative
+                & .together
+                    display: flex
+                    & .sert_big_clone
+                        cursor: pointer
+                        font-size: 16px
+                        width: 50%
+                        display: flex
+                        justify-content: space-evenly
+                        border-left: solid 1px rgba(3,3,3,0.3)
+                        & .sert_group_clone
+                            overflow: scroll
+                            box-sizing: border-box
+                            padding: 0px 10px
+                            border-radius: 15px 15px 0px 0px
+                            z-index: 1
+                            height: 35vh
+                            width: 100%
+                            position: fixed
+                            display: none
+                            flex-direction: column
+                            background-color: #f7f7f7
+                            box-shadow: 0px -1px 5px rgba(3,3,3,0.3)
+                            top: initial
+                            left: 0px
+                            bottom: 0px
+                            & .sert_list
+                                font-weight: normal
+                                padding: 20px 0px
+                                &:hover
+                                    color: $color_main
+                        & #popogo
+                            display: flex
+                            align-items: center
+                            font-size: 14px
+                            transform: rotate(180deg)
+                    & .all_type
+                        cursor: pointer
+                        width: 50%
+                        margin: auto
+                        display: flex
+                        justify-content: space-evenly
+                        font-size: 20px
+                        & #gogogo
+                            display: flex
+                            align-items: center
+                            font-size: 14px
+                            transform: rotate(180deg)
                 & .choose_group
-                    position: sticky
-                    top: 100px
+                    overflow: scroll
+                    box-sizing: border-box
+                    padding: 0px 10px
+                    border-radius: 15px 15px 0px 0px
+                    z-index: 1
+                    height: 35vh
+                    width: 100%
+                    position: fixed
+                    display: none
+                    flex-direction: column
+                    background-color: #f7f7f7
+                    box-shadow: 0px -1px 5px rgba(3,3,3,0.3)
+                    top: initial
+                    bottom: 0px
+                    padding-bottom: 0px
                     & li:hover > a 
                         color: $color_main
                     & .choose_item
                         position: relative
-                        margin: 25px 0px
+                        margin: 0px 0px
+                        padding: 20px 0px
                         & a
                             cursor: pointer 
                             transition: 0.3s
                             font-size: 16px
                             text-decoration: none
                             color: $color_black
-                        & i 
-                            position: absolute
-                            font-size: 12px
-                            transform: rotate(180deg)
-                            right: 10px
+                        #gogo,#go
+                            display: none
+                       
                         & .up
                             transform: rotate(0deg)
                         & .item_group
@@ -317,12 +462,12 @@ body
                             & .item_list
                                 padding-top: 20px
             & .content_buy
-                width: 80%
+                width: 100%
                 & .content_buy_area
                     display: flex
                     flex-wrap: wrap
                     & li 
-                        width: 100%
+                        width: 50%
                         padding: 20px
                         box-sizing: border-box
                         & .buy_item
@@ -331,3 +476,21 @@ body
                             box-sizing: border-box      
                             margin-bottom: 30px
                             padding: 5px
+                            & .shopcar
+                                box-sizing: border-box
+                                margin: auto
+                                z-index: 0
+                                opacity: 1
+                                width: 60%
+                                font-size: 12px
+                                padding: 10px 10px
+                                margin-top: 15px
+                                bottom: initial
+                                left: initial
+                                transform: none
+                                border-radius: 30px
+                                position: static
+                                &:hover
+                                    animation: none
+                        & .buy_item::before,.buy_item::after 
+                            content: none
