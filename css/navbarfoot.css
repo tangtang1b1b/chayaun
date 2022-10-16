@@ -147,6 +147,9 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   left: 50%;
   transform: translateX(-50%);
 }
+.nav_box .nav_bar .list_group .list_item:nth-child(1) {
+  display: none;
+}
 .nav_box .nav_bar .list_group .list_item {
   padding: 10px 5px;
   cursor: pointer;
@@ -424,6 +427,9 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
 @media screen and (max-width:1024px){
   .title_area h2 {
     font-size: 36px;
+  }
+  .nav_box .nav_bar .list_group .list_item:nth-child(1) {
+    display: block;
   }
   .nav_box .nav_bar .list_group .list_item a {
     font-size: 22px;
