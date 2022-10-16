@@ -7,6 +7,10 @@
   background-position: center;
 }
 
+.title_area {
+  padding-bottom: 60px;
+}
+
 .news {
   width: 100%;
   background-color: #f7f7f7;
@@ -23,9 +27,10 @@
   border-top: 1px solid rgba(51, 51, 51, 0.3);
 }
 .news .container_news .content_news_group .content_news_list:nth-child(1) {
-  padding-top: 80px;
+  padding-top: 20px;
 }
 .news .container_news .content_news_group .content_news_list {
+  transition: 0.3s;
   width: 100%;
   padding: 20px 10px;
   display: flex;

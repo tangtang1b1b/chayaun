@@ -12,7 +12,8 @@ $color_green:#00A26A
 .first_img
     background-image: url(../img/76.jpg)
     background-position: center
-
+.title_area
+    padding-bottom: 60px
 .news
     width: 100%
     background-color: $color_white
@@ -25,8 +26,9 @@ $color_green:#00A26A
             & .content_news_list + .content_news_list 
                 border-top: 1px solid rgba($color_black,0.3)
             & .content_news_list:nth-child(1)
-                padding-top: 80px
+                padding-top: 20px
             & .content_news_list
+                transition: 0.3s
                 width: 100%
                 padding: 20px 10px
                 display: flex
