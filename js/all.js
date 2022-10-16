@@ -63,7 +63,7 @@ $(".hamber").click(function(){
         $(".list_group").removeClass("show");
         setTimeout(function(){
             $(".list_group").css("left","-100%");
-        },700);
+        },600);
     }else{
         $(".hambox:nth-child(1)").css("animation","hambarbang1 0.4s both");
         $(".hambox:nth-child(2)").css("animation","rotat 0.6s 0.4s both");
