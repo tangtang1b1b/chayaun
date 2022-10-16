@@ -103,4 +103,104 @@ $color_green:#00A26A
                     padding: 20px 0px 0px
                     display: none
                     
+@media screen and (max-width:768px)
+    .load_area
+        height: 600px
+        width: 100%
+        background-color: $color_white
+        padding: 160px 0px
+        & .container_load
+            width: 100%
+            max-width: 1200px
+            margin: auto
+            & .content_load
+                margin: auto
+                border: solid 1px #dcdcdc
+                width: 100%
+                & .loadadd
+                    background-color: #fbfbfb
+                    display: flex
+                    & p 
+                        cursor: pointer
+                        font-weight: bold
+                        padding: 20px 0px
+                        text-align: center
+                        width: 50%
+                    & p + p
+                        border-left: solid 1px #dcdcdc
+                    & .jufr
+                        border-bottom: solid 1px #dcdcdc
+                    & .dunse 
+                        border-bottom: solid 1px #dcdcdc
+                    & .dunjuadd
+                        border-bottom: none
+                        background-color: #fff
+                & .choosewhat
+                    background-color: #fff
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    padding: 20px 10px
+                    border-bottom: solid 1px #dcdcdc
+                    & p 
+                        
+                        cursor: pointer
+                        background-color: #01b201
+                        color: $color_white
+                        font-weight: bold
+                        padding: 10px 0px
+                        text-align: center
+                        width: 100%
+                        border-radius: 5px
+                        &:hover
+                            filter: brightness(1.1)
+                    & p + p
+                        margin-left: 0px
+                        margin-top: 5px
+                        background-color: #3b5998
+                & .load_write
+                    background-color: #fff
+                    padding: 10px
+                    & .write_group.other
+                        display: none
+                    & .write_group
+                        & .write_list
+                            margin-bottom: 20px
+                            display: flex
+                            justify-content: center
+                        & .write_list input
+                            border: solid 1px #dcdcdc
+                            padding: 10px
+                        & .write_list.fill input
+                            width: 100%
+                        & .write_list:nth-child(6) 
+                            margin-bottom: 0
+                            justify-content: flex-start
+                            & a 
+
+                & .addbtn
+                    background-color: #fff
+                    text-decoration: none
+                    padding: 0px 20px 20px
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    & .letgo 
+                        border: solid 1px
+                        background-color: $color_green
+                        text-align: center
+                        border-radius: 5px
+                        padding: 15px 50px
+                        color: $color_white
+                        font-weight: bold
+                        &:hover
+                            filter: brightness(1.1)
+                    & .forget
+                        text-align: center
+                        color: rgba($color_black,0.7)
+                        font-weight: bold
+                        font-size: 14px
+                        padding: 20px 0px 0px
+                        display: none
 
