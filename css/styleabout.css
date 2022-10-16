@@ -112,3 +112,29 @@
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(6) a {
   color: rgba(247, 247, 247, 0.5);
 }
+
+@media screen and (max-width: 768px) {
+  .about_menu .container_about .about_group {
+    padding: 40px 0px;
+  }
+  .alive_area .container_alive h3 {
+    font-size: 20px;
+  }
+  .alive_area .container_alive p {
+    line-height: 22px;
+    font-size: 12px;
+  }
+  .photo_area {
+    padding: 40px 0px;
+  }
+  .photo_area h3 {
+    padding: 20px 0px;
+  }
+  .photo_area .container_photo {
+    height: 300px;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  }
+  .photo_area .container_photo .content_photo:nth-child(6) ~ .content_photo {
+    display: none;
+  }
+}

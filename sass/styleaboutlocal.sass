@@ -101,3 +101,42 @@ $color_green:#00A26A
 
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(6) a 
     color: rgba($color_white,0.5)
+
+
+@media screen and (max-width:768px) 
+    .about_menu
+        & .container_about
+            & .about_group
+                padding: 40px 0px
+
+    .place_about
+        padding-bottom: 40px
+        & .container_place
+            & .content_place_group
+                width: 100%
+                & .content_place_list:nth-child(2)
+                    margin-bottom: 0px
+                    width: 100%
+                    margin-right: 0
+                    margin-left: 0
+                    & a 
+                        flex-direction: column-reverse
+                & .content_place_list
+                    margin-bottom: 0px
+                    width: 100%
+                    margin-right: 0
+                    margin-left: 0
+                    padding-bottom: 40px
+                    & a 
+                        flex-direction: column-reverse
+                        align-items: center
+                        justify-content: center
+                        margin-left: auto
+                        & .content_local
+                            margin: auto 0px auto
+                            width: 100%
+                            padding: 10px
+                            box-sizing: border-box
+                        & .content_img
+                            width: 100%
+                            height: 250px
