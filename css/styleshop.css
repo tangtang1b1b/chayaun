@@ -251,7 +251,7 @@ body {
   }
 }
 .product_area .container_product_area .content_buy .container_page {
-  max-width: 33.333333%;
+  max-width: 50%;
   margin: auto;
   display: flex;
   justify-content: space-between;
