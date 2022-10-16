@@ -507,7 +507,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-evenly;
-    font-size: 20px;
+    font-size: 16px;
   }
   .product_area .container_product_area .content_choose .together .all_type #gogogo {
     display: flex;
