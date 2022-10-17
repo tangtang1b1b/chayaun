@@ -974,7 +974,124 @@ $color_green:#00A26A
                     margin: auto
                     & .derivative_number_bar
                         margin: 0 10px
+    .flavor_row
+        position: relative
+        width: 100%
+        background-color: $color_main
+        transition: 1s 0.2s
+        &:hover
+            background-color: $color_black
+        & .flavor_inner
+            max-width: 1200px   
+            margin: auto
+            padding: 200px 20px
+            & .flavor_inner_box
+                display: flex
+                align-items: center
+                height: 100%
+                width: 100%
+                & .flavor_title
+                    & .flavor_title_inner
+                        & .main_pro 
+                            font-size: 48px
+                            margin-bottom: 50px
+                            color: $color_white
+                        & .main_new
+                            color: rgba($color_white,0.5)
+                            font-size: 16px   
+                            font-weight: bold
                             
+                        & .flavor_title_cli 
+                            font-size: 36px
+                            line-height: 50px
+                            margin-bottom: 50px
+                            color: $color_white
+
+                        & .read_more
+                            text-decoration: none
+                            display: flex
+                            justify-content: start
+                            align-items: center
+                            padding: 5px 0px
+                            transition: 0.5s
+                            & .read_more_text
+                                color: $color_white
+                                overflow: hidden
+                                height: 20px
+                                font-weight: bold
+                                & .read_more_view
+                                    transition: 0.5s
+                                    font-size: 22px
+
+                            & .read_go
+                                margin-left: 40px
+                                color: $color_white 
+                                font-weight: bold
+                                font-size: 18px
+                                transition: 0.5s
+                                transition-delay: 0.2s
+                                transform: rotate(-45deg)
+                        & .read_more:hover p
+                            animation: upup 0.5s 1
+                        & .read_more:hover .read_go
+                            animation: rightscale 0.5s 1
+        & .flavor_container
+            position: absolute
+            top: 0
+            right: 0
+            width: calc(100vw/2*1.2)
+            background-color: #fff
+            height: 100%
+            display: flex
+            & .flavor_content
+                position: relative
+                width: calc((calc(100vw/2*1.2))/4)
+                background-color: #ccc
+                height: 100%
+                flex-grow: 1
+                transition: 0.5s
+                transform-origin: bottom
+                overflow: hidden
+                text-decoration: none
+                color: $color_white
+                & .flavor_kind
+                    width: 100%
+                    height: 100%
+                    background-size: cover
+                    background-position: center
+                    transition: 0.5s
+                & .word 
+                    position: absolute
+                    text-align: center
+                    width: 100%
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    opacity: 0
+                    transition: 0.5s
+                    font-size: 32px
+                    pointer-events: none
+                & .flavor_kind.little
+                    background-image: url(../img/44.jpg)
+                & .flavor_kind.strong
+                    background-image: url(../img/39.png)
+                & .flavor_kind.old
+                    background-image: url(../img/43.jpg)
+                & .flavor_kind:hover
+                    filter: brightness(0.5)
+            & .flavor_content:nth-child(1):hover
+                flex-grow: 3
+                & .word
+                    opacity: 1
+            & .flavor_content:nth-child(2):hover
+                flex-grow: 3
+                & .word
+                    opacity: 1
+            & .flavor_content:nth-child(3):hover
+                flex-grow: 3
+                & .word
+                    opacity: 1
+
     .newsletter_row
         width: 100%
         height: auto
