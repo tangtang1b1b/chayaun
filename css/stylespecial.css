@@ -47,10 +47,12 @@
 
 .product_menu.p2 {
   display: none;
+  opacity: 0;
 }
 
 .product_menu.p3 {
   display: none;
+  opacity: 0;
 }
 
 .product_menu {

@@ -112,9 +112,19 @@ $(".type_list").click(function(){
     i = parseInt($(this).attr("data-num"));
     for(let i =0;i<sect.length;i++){
         $(prod[i]).removeClass("bc");
-        $(sect[i]).css("display","none");
+        $(sect[i]).animate({
+            opacity:'0',
+        },300);
+        setTimeout(function(){
+            $(sect[i]).css({display:'none'});
+        },350);
     }
-    $(sect[i]).css("display","block");
+    $(sect[i]).animate({
+        opacity:'1',
+    },300);
+    setTimeout(function(){
+        $(sect[i]).css({display:'block'});
+    },350);
     $(prod[i]).addClass("bc");
 });
 

@@ -219,10 +219,14 @@ body
                 & .pagenum_group
                     display: flex
                     & .pagenum_list
+                        padding: 0px 15px
+                        
+                    & .pagenum_list:nth-child(1) a
+                        padding: 0px 5px
+                        border-bottom: solid 1px rgba($color_black,0.5)
                     & .pagenum_list a
                         font-size: 18px
                         text-decoration: none
-                        padding: 0px 20px
                         color: $color_black
                         transition: 0.3s
                         &:hover 
