@@ -487,7 +487,10 @@ body {
     opacity: 1;
     transition: 0.3s;
   }
-  .morebuyit .container_norebuy .content_morebuy .morebuyprod:nth-child(2n) {
+  .morebuyit .container_norebuy .content_morebuy .morebuyprod:nth-child(2) {
+    display: none;
+  }
+  .morebuyit .container_norebuy .content_morebuy .morebuyprod:nth-child(1) {
     display: none;
   }
   .morebuyit .container_norebuy .content_morebuy .morebuyprod {

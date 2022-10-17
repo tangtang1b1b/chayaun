@@ -193,6 +193,7 @@
   .news .container_news .content_news_group .content_news_list a .detial {
     box-sizing: border-box;
     width: 100%;
+    height: 180px;
     padding: 10px;
     margin-left: 0px;
   }
@@ -203,6 +204,7 @@
     transition: 0.3s;
   }
   .news .container_news .content_news_group .content_news_list a .detial .detial_content {
+    display: none;
     letter-spacing: 1px;
     font-size: 12px;
     color: rgba(51, 51, 51, 0.8);

@@ -27,6 +27,7 @@
   cursor: pointer;
 }
 .type_menu .container_type .type_group .type_list .a {
+  padding-bottom: 3px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
