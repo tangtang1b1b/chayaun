@@ -896,3 +896,158 @@
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(1) a {
   color: rgba(247, 247, 247, 0.5);
 }
+
+@media screen and (max-width: 768px) {
+  .derivative_row {
+    position: relative;
+    width: 100%;
+    height: 921px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+  }
+  .derivative_row .derivative_inner_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .derivative_row .derivative_inner_box .derivative_title {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    font-size: 48px;
+  }
+  .derivative_row .derivative_inner_box .derivative_title .derivative_title_inner {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  .derivative_row .derivative_inner_box .derivative_title .derivative_title_inner .main_new {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .derivative_row .derivative_inner_box .derivative_container::-webkit-scrollbar {
+    display: none;
+  }
+  .derivative_row .derivative_inner_box .derivative_container {
+    position: relative;
+    height: 500px;
+    width: 3000px;
+    overflow-x: scroll;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group {
+    cursor: pointer;
+    position: absolute;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    left: 40%;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 100%;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn img {
+    width: 100%;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list + .derivative_list {
+    padding-left: 30px;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .product_else {
+    width: 430px;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .product_else .tea_img {
+    transition: 1s;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center 80%;
+       object-position: center 80%;
+    box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.3);
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .product_else:hover .tea_img {
+    transform: scale(1.05);
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name {
+    width: 100%;
+    position: absolute;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car {
+    transition: 0.3s;
+    width: 22%;
+    font-size: 14px;
+    color: #f7f7f7;
+    background-color: #333;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car .material-symbols-outlined {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: 0;
+    color: #f7f7f7;
+    padding: 7px;
+    border-radius: 100%;
+    font-size: 18px;
+  }
+  .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car:hover {
+    background-color: #00A26A;
+  }
+  .derivative_row .derivative_inner_box .derivative_number {
+    display: none;
+    position: absolute;
+    width: 100%;
+    font-size: 24px;
+    top: 180px;
+  }
+  .derivative_row .derivative_inner_box .derivative_number .derivative_number_inner {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+  }
+  .derivative_row .derivative_inner_box .derivative_number .derivative_number_inner .derivative_number_bar {
+    margin: 0 10px;
+  }
+}
