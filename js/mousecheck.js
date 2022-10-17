@@ -32,80 +32,81 @@ let checktop = $(rowbox).offset().top;
 let checkdown = $(rowbox).outerHeight();
 let numb = document.querySelector(".derivative_number_var");
 
-$(window).resize(function(){
-    if($(window).width()>1024){
-        $(rowbox).mousedown(function (e) {
-            $(this).css("cursor","grabbing");
-            $(".tea_img").css("cursor","grabbing");
-            downpagex = e.pageX;
-            e.preventDefault();
+if($(window).width()>1024){
+    $(rowbox).mousedown(function (e) {
+        $(this).css("cursor","grabbing");
+        $(".tea_img").css("cursor","grabbing");
+        downpagex = e.pageX;
+        e.preventDefault();
 
-            $(rowbox).mousemove(move);
-        });
+        $(rowbox).mousemove(move);
+    });
 
-        $(rowbox).mouseup(function (e) {
-            if(e.pageY>checktop && e.pageY<(checktop+checkdown)){
-                $(this).css("cursor","pointer");
-                $(".tea_img").css("cursor","pointer");
-                offsetpagex += e.pageX - downpagex;
-            }
-            
-            $(rowbox).off("mousemove");
-        });
+    $(rowbox).mouseup(function (e) {
+        if(e.pageY>checktop && e.pageY<(checktop+checkdown)){
+            $(this).css("cursor","pointer");
+            $(".tea_img").css("cursor","pointer");
+            offsetpagex += e.pageX - downpagex;
+        }
+        
+        $(rowbox).off("mousemove");
+    });
 
-        let shake = document.querySelectorAll(".derivative_list .derivative_list_card .tea_img_name .derivative_car");
+    let shake = document.querySelectorAll(".derivative_list .derivative_list_card .tea_img_name .derivative_car");
 
-        $(shake[0]).addClass("shake");
-        function move(e){
-            if(e.pageY>checktop && e.pageY<(checktop+checkdown)){
-                let x = e.pageX - downpagex;
-                if((offsetpagex + x)*2.3 < 180 && (offsetpagex + x)*2.3 > -3500){
-                    $(rowbox).css("transform","translateX("+(offsetpagex + x)*2.3 +"px)");
+    $(shake[0]).addClass("shake");
+    function move(e){
+        if(e.pageY>checktop && e.pageY<(checktop+checkdown)){
+            let x = e.pageX - downpagex;
+            if((offsetpagex + x)*2.3 < 180 && (offsetpagex + x)*2.3 > -3500){
+                $(rowbox).css("transform","translateX("+(offsetpagex + x)*2.3 +"px)");
+                
+                
+                for(let i = 0;i<=8;i++){
                     
-                    
-                    for(let i = 0;i<=8;i++){
+                    if(((offsetpagex + x)*2.3) < -300 && ((offsetpagex + x)*2.3) > -750){
+                        $(numb).text("02");
+                        $(shake[i]).removeClass("shake");
+                        $(shake[1]).addClass("shake");
+                    }else if(((offsetpagex + x)*2.3) < -750 && ((offsetpagex + x)*2.3) > -1200){
+                        $(numb).text("03");
+                        $(shake[i]).removeClass("shake");
+                        $(shake[2]).addClass("shake");
                         
-                        if(((offsetpagex + x)*2.3) < -300 && ((offsetpagex + x)*2.3) > -750){
-                            $(numb).text("02");
-                            $(shake[i]).removeClass("shake");
-                            $(shake[1]).addClass("shake");
-                        }else if(((offsetpagex + x)*2.3) < -750 && ((offsetpagex + x)*2.3) > -1200){
-                            $(numb).text("03");
-                            $(shake[i]).removeClass("shake");
-                            $(shake[2]).addClass("shake");
-                            
-                        }else if(((offsetpagex + x)*2.3) < -1200 && ((offsetpagex + x)*2.3) > -1650){
-                            $(numb).text("04");
-                            $(shake[3]).addClass("shake");
-                            $(shake[i]).removeClass("shake");
-                        }else if(((offsetpagex + x)*2.3) < -1650 && ((offsetpagex + x)*2.3) > -2100){
-                            $(numb).text("05");
-                            $(shake[4]).addClass("shake");
-                            $(shake[i]).removeClass("shake");
-                        }else if(((offsetpagex + x)*2.3) < -2100 && ((offsetpagex + x)*2.3) > -2550){
-                            $(numb).text("06");
-                            $(shake[5]).addClass("shake");
-                            $(shake[i]).removeClass("shake");
-                        }else if(((offsetpagex + x)*2.3) < -2550 && ((offsetpagex + x)*2.3) > -3000){
-                            $(numb).text("07");
-                            $(shake[6]).addClass("shake");
-                            $(shake[i]).removeClass("shake");
-                        }else if(((offsetpagex + x)*2.3) < -3000 && ((offsetpagex + x)*2.3) > -4000){
-                            $(numb).text("08");
-                            $(shake[7]).addClass("shake");
-                            $(shake[i]).removeClass("shake");
-                        }else{
-                            $(numb).text("01");
-                            $(shake[0]).addClass("shake");
-                            $(shake[i]).removeClass("shake");
-                        }
-                        
+                    }else if(((offsetpagex + x)*2.3) < -1200 && ((offsetpagex + x)*2.3) > -1650){
+                        $(numb).text("04");
+                        $(shake[3]).addClass("shake");
+                        $(shake[i]).removeClass("shake");
+                    }else if(((offsetpagex + x)*2.3) < -1650 && ((offsetpagex + x)*2.3) > -2100){
+                        $(numb).text("05");
+                        $(shake[4]).addClass("shake");
+                        $(shake[i]).removeClass("shake");
+                    }else if(((offsetpagex + x)*2.3) < -2100 && ((offsetpagex + x)*2.3) > -2550){
+                        $(numb).text("06");
+                        $(shake[5]).addClass("shake");
+                        $(shake[i]).removeClass("shake");
+                    }else if(((offsetpagex + x)*2.3) < -2550 && ((offsetpagex + x)*2.3) > -3000){
+                        $(numb).text("07");
+                        $(shake[6]).addClass("shake");
+                        $(shake[i]).removeClass("shake");
+                    }else if(((offsetpagex + x)*2.3) < -3000 && ((offsetpagex + x)*2.3) > -4000){
+                        $(numb).text("08");
+                        $(shake[7]).addClass("shake");
+                        $(shake[i]).removeClass("shake");
+                    }else{
+                        $(numb).text("01");
+                        $(shake[0]).addClass("shake");
+                        $(shake[i]).removeClass("shake");
                     }
+                    
                 }
             }
-            
         }
-    }else{
+        
+    }
+}
+$(window).resize(function(){
+    if($(window).width()<1024){
         $(".derivative_car").removeClass("shake");
     }
 });
