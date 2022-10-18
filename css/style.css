@@ -246,7 +246,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  left: -200%;
+  left: -300%;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn {
   -webkit-user-select: none;
@@ -885,12 +885,6 @@
 .flavor_row .flavor_container .flavor_content:nth-child(3):hover .word {
   opacity: 1;
 }
-
-.slideIn {
-  transition: 1s;
-  opacity: 0;
-  transform: translateY(20px);
-}
 @-webkit-keyframes rightscale {
   0% {
     transform: translate(-15px, 15px) rotate(-45deg);
@@ -934,10 +928,30 @@
   color: #333;
   font-size: 48px;
 }
+.newsletter_row .newsletter_inner_box .newsletter_inner .main_pro.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.newsletter_row .newsletter_inner_box .newsletter_inner .main_pro.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
+}
 .newsletter_row .newsletter_inner_box .newsletter_inner .main_new {
   color: rgba(51, 51, 51, 0.5);
   font-size: 16px;
   font-weight: bold;
+}
+.newsletter_row .newsletter_inner_box .newsletter_inner .main_new.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.newsletter_row .newsletter_inner_box .newsletter_inner .main_new.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 .newsletter_row .newsletter_inner_box .newsletter_ask {
   width: 50%;
@@ -960,6 +974,16 @@
   font-weight: normal;
   font-size: 14px;
   color: rgba(51, 51, 51, 0.7);
+}
+.newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_ask_about.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_ask_about.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 .newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_send {
   position: relative;
@@ -997,6 +1021,16 @@
 }
 .newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_send .newsletter_cli i:hover {
   transform: scale(1.2);
+}
+.newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_send.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.newsletter_row .newsletter_inner_box .newsletter_ask .newsletter_ask_content .newsletter_send.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list:nth-child(1) a {

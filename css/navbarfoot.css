@@ -289,9 +289,23 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     left: 0;
     top: 60px;
   }
+
+
   .foot_row .foot_inner_box .foot_inner_top .foot_inner .main_pro {
     color: #fafafa;
     font-size: 36px;
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_inner .main_pro.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+
+  .foot_row .foot_inner_box .foot_inner_top .foot_inner .main_pro.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_nav {
     width: 33.333333%;
@@ -305,6 +319,16 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list {
     font-size: 16px;
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list a {
     text-decoration: none;
@@ -331,6 +355,18 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_address p {
     font-size: 16px;
   }
+
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_address p.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_address p.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_title {
     display: flex;
     padding: 60px 0px 20px;
@@ -338,6 +374,18 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     color: #fafafa;
     font-size: 20px;
   }
+
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_title.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_title.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact {
     display: flex;
   }
@@ -352,6 +400,18 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list {
     margin-right: 50px;
   }
+
+  .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
   .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list a {
     color: #fafafa;
     font-size: 22px;
@@ -365,6 +425,18 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact .foot_contact_grop .foot_contact_list {
     margin-right: 50px;
   }
+
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact .foot_contact_grop .foot_contact_list.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact .foot_contact_grop .foot_contact_list.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact .foot_contact_grop .foot_contact_list a {
     color: #fafafa;
     font-size: 22px;
@@ -397,6 +469,18 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     margin-left: 25px;
     padding-left: 25px;
   }
+
+  .foot_row .foot_inner_box .foot_inner_down .foot_company .foot_know .foot_know_group .foot_know_list.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .foot_row .foot_inner_box .foot_inner_down .foot_company .foot_know .foot_know_group .foot_know_list.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
   .foot_row .foot_inner_box .foot_inner_down .foot_company .foot_know .foot_know_group .foot_know_list a {
     font-size: 12px;
     text-decoration: none;
@@ -412,6 +496,17 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     text-align: center;
     color: #fafafa;
     font-size: 12px;
+  }
+
+  .foot_row .foot_inner_box .foot_inner_down .foot_tibame p.slideIn {
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .foot_row .foot_inner_box .foot_inner_down .foot_tibame p.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
   }
 
 
