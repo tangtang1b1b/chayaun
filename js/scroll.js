@@ -1,5 +1,6 @@
 
 // if($(window).width()>1024){
+
     let oth = $(window).innerHeight();
     $(window).scroll(function(){
         let sct = $(this).scrollTop();
