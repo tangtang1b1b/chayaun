@@ -24,7 +24,6 @@
             if(all > sld){
                 $(this).addClass("active");
             }
-            console.log($(".slideIn"))
         });
     });
 // }
