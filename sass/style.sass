@@ -1730,6 +1730,15 @@ $color_green:#00A26A
                         opacity: 1
                     & .read_more:hover .circle
                         color: $color_white
+        & .read.slideIn
+            transition: 1s
+            opacity: 1
+            transform: translateY(0px) 
+        & .read.slideIn.active
+            transition: 1s
+            opacity: 1
+            transform: translateY(0px) 
+
     .artisan_row
         width: 100%
         height: 1000px
@@ -1908,6 +1917,14 @@ $color_green:#00A26A
                     opacity: 1
                 & .read_more:hover .circle
                     color: $color_white
+            & .read.slideIn
+                transition: 1s
+                opacity: 1
+                transform: translateY(0px) 
+            & .read.slideIn.active
+                transition: 1s
+                opacity: 1
+                transform: translateY(0px)  
 
     .flavor_row
         position: relative
@@ -1932,16 +1949,40 @@ $color_green:#00A26A
                             font-size: 36px
                             margin-bottom: 50px
                             color: $color_white
+                        & .main_pro.slideIn
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px) 
+                        & .main_pro.slideIn.active
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px) 
                         & .main_new
                             color: rgba($color_white,0.5)
                             font-size: 16px   
                             font-weight: bold
-                            
+                        & .main_new.slideIn
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px) 
+                        & .main_new.slideIn.active
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px)  
+                                
                         & .flavor_title_cli 
                             font-size: 30px
                             line-height: 50px
                             margin-bottom: 50px
                             color: $color_white
+                        & .flavor_title_cli.slideIn
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px) 
+                        & .flavor_title_cli.slideIn.active
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px) 
 
                         & .read_more
                             text-decoration: none
@@ -1971,6 +2012,14 @@ $color_green:#00A26A
                             animation: upup 0.5s 1
                         & .read_more:hover .read_go
                             animation: rightscale 0.5s 1
+                        & .read_more.slideIn
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px) 
+                        & .read_more.slideIn.active
+                            transition: 1s
+                            opacity: 1
+                            transform: translateY(0px) 
         & .flavor_container
             position: absolute
             top: 0
@@ -2052,10 +2101,27 @@ $color_green:#00A26A
                 & .main_pro
                     color: $color_black
                     font-size: 36px
+                & .main_pro.slideIn
+                    transition: 1s
+                    opacity: 1
+                    transform: translateY(0px) 
+                & .main_pro.slideIn.active
+                    transition: 1s
+                    opacity: 1
+                    transform: translateY(0px)   
+
                 & .main_new
                     color: rgba($color_black,0.5)
                     font-size: 16px   
                     font-weight: bold
+                & .main_new.slideIn
+                    transition: 1s
+                    opacity: 1
+                    transform: translateY(0px) 
+                & .main_new.slideIn.active
+                    transition: 1s
+                    opacity: 1
+                    transform: translateY(0px)   
             & .newsletter_ask
                 padding-bottom: 80px
                 width: 100%
@@ -2075,6 +2141,14 @@ $color_green:#00A26A
                             font-weight: normal
                             font-size: 14px
                             color: rgba($color_black,0.7)
+                    & .newsletter_ask_about.slideIn
+                        transition: 1s
+                        opacity: 1
+                        transform: translateY(0px) 
+                    & .newsletter_ask_about.slideIn.active
+                        transition: 1s
+                        opacity: 1
+                        transform: translateY(0px)   
                     & .newsletter_send
                         position: relative
                         margin-top: 20px
@@ -2102,3 +2176,11 @@ $color_green:#00A26A
                             transition: 0.3s
                         & .newsletter_cli i:hover
                             transform: scale(1.2)
+                    & .newsletter_send.slideIn
+                        transition: 1s
+                        opacity: 1
+                        transform: translateY(0px) 
+                    & .newsletter_send.slideIn.active
+                        transition: 1s
+                        opacity: 1
+                        transform: translateY(0px) 
