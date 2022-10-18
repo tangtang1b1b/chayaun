@@ -805,12 +805,12 @@
   -webkit-animation: rightscale 0.5s 1;
           animation: rightscale 0.5s 1;
 }
-.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read.slideIn {
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read_more.slideIn {
   transition: 1s;
   opacity: 0;
   transform: translateY(20px);
 }
-.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read.slideIn.active {
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read_more.slideIn.active {
   transition: 1s;
   opacity: 1;
   transform: translateY(0px);
@@ -1480,7 +1480,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 20px;
     background-color: #f7f7f7;
     border-radius: 50px;
     cursor: pointer;
