@@ -427,6 +427,16 @@
 .derivative_row .derivative_inner_box .read .read_inner .read_more:hover .circle {
   color: #f7f7f7;
 }
+.derivative_row .derivative_inner_box .read.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.derivative_row .derivative_inner_box .read.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 .shake {
   -webkit-animation: shake 2s infinite;
@@ -579,12 +589,32 @@
 .artisan_row .artisan_inner_box .artisan_container h3 span {
   margin-top: 40px;
 }
+.artisan_row .artisan_inner_box .artisan_container h3.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.artisan_row .artisan_inner_box .artisan_container h3.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
+}
 .artisan_row .artisan_inner_box .artisan_container p {
   text-indent: 2em;
   line-height: 60px;
   letter-spacing: 3px;
   font-size: 20px;
   color: rgba(51, 51, 51, 0.5);
+}
+.artisan_row .artisan_inner_box .artisan_container p.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.artisan_row .artisan_inner_box .artisan_container p.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 .artisan_row .artisan_inner_box .read {
   position: absolute;
@@ -663,6 +693,16 @@
 .artisan_row .artisan_inner_box .read .read_more:hover .circle {
   color: #f7f7f7;
 }
+.artisan_row .artisan_inner_box .read.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.artisan_row .artisan_inner_box .read.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
+}
 
 .flavor_row {
   position: relative;
@@ -689,16 +729,46 @@
   margin-bottom: 50px;
   color: #f7f7f7;
 }
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .main_pro.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .main_pro.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
+}
 .flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .main_new {
   color: rgba(247, 247, 247, 0.5);
   font-size: 16px;
   font-weight: bold;
+}
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .main_new.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .main_new.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 .flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .flavor_title_cli {
   font-size: 36px;
   line-height: 50px;
   margin-bottom: 50px;
   color: #f7f7f7;
+}
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .flavor_title_cli.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .flavor_title_cli.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 .flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read_more {
   text-decoration: none;
@@ -734,6 +804,16 @@
 .flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read_more:hover .read_go {
   -webkit-animation: rightscale 0.5s 1;
           animation: rightscale 0.5s 1;
+}
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.flavor_row .flavor_inner .flavor_inner_box .flavor_title .flavor_title_inner .read.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 .flavor_row .flavor_container {
   position: absolute;
@@ -810,12 +890,6 @@
   transition: 1s;
   opacity: 0;
   transform: translateY(20px);
-}
-
-.slideIn.active {
-  transition: 1s;
-  opacity: 1;
-  transform: translateY(0px);
 }
 @-webkit-keyframes rightscale {
   0% {
