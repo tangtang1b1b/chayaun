@@ -735,6 +735,11 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   .foot_row .foot_inner_box .foot_inner_top .foot_inner .main_pro {
     font-size: 26px;
   }
+  .foot_row .foot_inner_box .foot_inner_top .foot_inner .main_pro.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
   .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact {
     display: none;
   }
@@ -763,6 +768,11 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     font-size: 18px;
     padding-bottom: 40px;
     text-align: center;
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_nav .foot_nav_group .foot_nav_list.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
   }
   .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list a {
     color: #fafafa;
@@ -801,7 +811,36 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     color: rgba(250, 250, 250, 0.5);
     text-align: center;
   }
-
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_address p.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_title.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_contact_clone .foot_contact_grop .foot_contact_list.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .foot_row .foot_inner_box .foot_inner_top .foot_ask .foot_ask_main .foot_contact .foot_contact_grop .foot_contact_list.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .foot_row .foot_inner_box .foot_inner_down .foot_company .foot_know .foot_know_group .foot_know_list.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  .foot_row .foot_inner_box .foot_inner_down .foot_tibame p.slideIn {
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 
