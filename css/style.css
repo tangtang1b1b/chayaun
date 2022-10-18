@@ -246,7 +246,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  left: 40%;
+  left: -200%;
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group #followbtn {
   -webkit-user-select: none;
@@ -330,6 +330,10 @@
 }
 .derivative_row .derivative_inner_box .derivative_container .derivative_group .derivative_list .derivative_list_card .tea_img_name .derivative_car:hover {
   background-color: #00A26A;
+}
+.derivative_row .derivative_inner_box .derivative_container .derivative_group.slide_left {
+  transition: 1s;
+  left: 40%;
 }
 .derivative_row .derivative_inner_box .derivative_number {
   position: absolute;
@@ -479,6 +483,7 @@
   height: 1300px;
   background-color: #f7f7f7;
   overflow: hidden;
+  transition: 1s;
 }
 .artisan_row .artisan_photo {
   position: absolute;
@@ -488,18 +493,22 @@
   justify-content: center;
   width: 100%;
 }
+.artisan_row .artisan_photo .artisan_photo_item.slideIn:nth-child(1) {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.artisan_row .artisan_photo .artisan_photo_item.slideIn:nth-child(2) {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
 .artisan_row .artisan_photo .artisan_photo_item:nth-child(1) {
   position: relative;
   top: 150px;
   right: 28%;
 }
 .artisan_row .artisan_photo .artisan_photo_item:nth-child(2) {
-  position: relative;
-  top: -150px;
-  left: 28%;
-}
-.artisan_row .artisan_photo .artisan_photo_item:nth-child(3) {
-  display: none;
   position: relative;
   top: -150px;
   left: 28%;
@@ -514,6 +523,11 @@
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.artisan_row .artisan_photo .artisan_photo_item.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 .artisan_row .artisan_inner_box {
   display: flex;
@@ -790,6 +804,18 @@
 }
 .flavor_row .flavor_container .flavor_content:nth-child(3):hover .word {
   opacity: 1;
+}
+
+.slideIn {
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.slideIn.active {
+  transition: 1s;
+  opacity: 1;
+  transform: translateY(0px);
 }
 @-webkit-keyframes rightscale {
   0% {
@@ -1380,13 +1406,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 15px;
     background-color: #f7f7f7;
     border-radius: 50px;
     cursor: pointer;
     margin-top: 20px;
     display: inline-block;
-    width: 140px;
+    width: 100px;
     transition: 0.5s;
     overflow: hidden;
     text-decoration: none;
@@ -1395,11 +1421,11 @@
     color: #333;
     font-weight: bold;
     overflow: hidden;
-    height: 20px;
+    height: 16px;
     transition: 0.2s;
   }
   .banner_row .banner_go .box_group .banner_inner_box_group .read_more .read_more_text p {
-    font-size: 22px;
+    font-size: 16px;
   }
   .banner_row .banner_go .box_group .banner_inner_box_group .read_more .read_go {
     position: absolute;

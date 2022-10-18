@@ -190,7 +190,7 @@ $color_green:#00A26A
                 margin: auto
                 display: flex
                 justify-content: center
-                left: 40%
+                left: -200%
                 & #followbtn
                     user-select: none
                     transform: translate(-50%,-50%)
@@ -256,8 +256,9 @@ $color_green:#00A26A
                                     font-size: 18px
                             & .derivative_car:hover 
                                 background-color: $color_green
-
-
+            & .derivative_group.slide_left
+                transition: 1s
+                left: 40%
         & .derivative_number
             position: absolute
             width: 100%
@@ -364,7 +365,7 @@ $color_green:#00A26A
     height: 1300px
     background-color: $color_white
     overflow: hidden
-
+    transition: 1s
     & .artisan_photo
         position: absolute
         top: 50%
@@ -372,17 +373,20 @@ $color_green:#00A26A
         display: flex
         justify-content: center
         width: 100%
-        
+        & .artisan_photo_item.slideIn:nth-child(1)
+            transition: 1s
+            opacity: 0
+            transform: translateY(20px)
+        & 
+        & .artisan_photo_item.slideIn:nth-child(2)
+            transition: 1s
+            opacity: 0
+            transform: translateY(20px)
         & .artisan_photo_item:nth-child(1)
             position: relative
             top: 150px
             right: 28%
         & .artisan_photo_item:nth-child(2)
-            position: relative
-            top: -150px
-            left: 28%
-        & .artisan_photo_item:nth-child(3)
-            display: none
             position: relative
             top: -150px
             left: 28%
@@ -394,6 +398,10 @@ $color_green:#00A26A
                 object-fit: cover
                 width: 100%
                 height: 100%
+        & .artisan_photo_item.slideIn.active
+            transition: 1s
+            opacity: 1
+            transform: translateY(0px)
     & .artisan_inner_box
         display: flex
         justify-content: center
@@ -509,7 +517,17 @@ $color_green:#00A26A
                 opacity: 1
             & .read_more:hover .circle
                 color: $color_white
+
+// .artisan_row.slideIn
+//     transition: 1s
+//     opacity: 0
+//     transform: translateY(20px)
+// .artisan_row.slideIn.active
+//     opacity: 1
+//     transform: translateY(0px)
 // 第四區塊
+
+
 .flavor_row
     position: relative
     width: 100%
@@ -627,6 +645,14 @@ $color_green:#00A26A
             flex-grow: 3
             & .word
                 opacity: 1
+.slideIn
+    transition: 1s
+    opacity: 0
+    transform: translateY(20px)
+.slideIn.active
+    transition: 1s
+    opacity: 1
+    transform: translateY(0px)
 
     @keyframes rightscale 
         0%
@@ -636,6 +662,12 @@ $color_green:#00A26A
         100%
             transform: translate(0px,0px) rotate(-45deg)
             opacity: 1
+// .flavor_row.slideIn
+//     opacity: 0
+//     transform: translateY(20px)
+// .flavor_row.slideIn.active
+//     opacity: 1
+//     transform: translateY(0px)
 // 第五區塊
 .newsletter_row
     width: 100%
@@ -742,8 +774,6 @@ $color_green:#00A26A
                 display: none
             & .derivative_container
                 position: relative
-                // display: flex
-                // align-items: center
                 top: 0
                 transform: translateY(0)
                 height: 400px
@@ -1088,13 +1118,13 @@ $color_green:#00A26A
                         display: flex
                         justify-content: space-between
                         align-items: center
-                        padding: 15px 20px
+                        padding: 10px 15px
                         background-color: $color_white
                         border-radius: 50px
                         cursor: pointer
                         margin-top: 20px
                         display: inline-block
-                        width: 140px
+                        width: 100px
                         transition: 0.5s
                         overflow: hidden
                         text-decoration: none
@@ -1102,10 +1132,10 @@ $color_green:#00A26A
                             color: $color_black
                             font-weight: bold
                             overflow: hidden
-                            height: 20px
+                            height: 16px
                             transition: 0.2s
                             & p
-                                font-size: 22px
+                                font-size: 16px
                         & .read_go
                             position: absolute
                             color: $color_black
@@ -1176,8 +1206,6 @@ $color_green:#00A26A
                 display: none
             & .derivative_container
                 position: relative
-                // display: flex
-                // align-items: center
                 top: 0
                 transform: translateY(0)
                 height: 400px
@@ -1338,7 +1366,6 @@ $color_green:#00A26A
         height: 1000px
         background-color: $color_white
         overflow: hidden
-        
         & .artisan_photo
             position: absolute
             top: 0%

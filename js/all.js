@@ -128,6 +128,16 @@ $(".type_list").click(function(){
     $(prod[i]).addClass("bc");
 });
 
+// $(window).scroll(function(evt){
+//     let oth = $(window).innerHeight();
+//     let sct = $(window).scrollTop();
+//     let oft = $("#special_group").offset().top;
+//     if(oth+sct > oft){
+//       $("#special_group").addClass(".slide_left");
+//     }
+//   });
+  
+
 // 重製區
 $(window).resize(function() {
     if($(window).width()>1024){
