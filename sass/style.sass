@@ -1185,10 +1185,6 @@ $color_green:#00A26A
                             animation: upup 0.5s 1
                         & .read_more:hover .read_go
                             animation: rightscale 0.5s 1
-                        // & .read_more.slideIn
-                        //     transition: 1s
-                        //     opacity: 1
-                        //     transform: translateY(0px) 
         & .flavor_container
             position: absolute
             top: 0
@@ -1247,6 +1243,24 @@ $color_green:#00A26A
                 flex-grow: 1
                 & .word
                     opacity: 0
+            & .flavor_content.slideIn:nth-child(1)
+                transition: 1s 0.1s
+                flex-grow: 1
+            & .flavor_content.slideIn:nth-child(2)
+                transition: 1s 0.1s
+                flex-grow: 1
+            & .flavor_content.slideIn:nth-child(3)
+                transition: 1s 0.1s
+                flex-grow: 1
+            & .flavor_content.slideIn.active:nth-child(1)
+                transition: 1s 0.1s
+                flex-grow: 3
+            & .flavor_content.slideIn.active:nth-child(2)
+                transition: 1s 0.1s
+                flex-grow: 2
+            & .flavor_content.slideIn.active:nth-child(3)
+                transition: 1s 0.1s
+                flex-grow: 1
     .newsletter_row
         width: 100%
         height: auto
@@ -1932,6 +1946,24 @@ $color_green:#00A26A
                 flex-grow: 1
                 & .word
                     opacity: 0
+            & .flavor_content.slideIn:nth-child(1)
+                transition: 1s 0.1s
+                flex-grow: 1
+            & .flavor_content.slideIn:nth-child(2)
+                transition: 1s 0.1s
+                flex-grow: 1
+            & .flavor_content.slideIn:nth-child(3)
+                transition: 1s 0.1s
+                flex-grow: 1
+            & .flavor_content.slideIn.active:nth-child(1)
+                transition: 1s 0.1s
+                flex-grow: 3
+            & .flavor_content.slideIn.active:nth-child(2)
+                transition: 1s 0.1s
+                flex-grow: 2
+            & .flavor_content.slideIn.active:nth-child(3)
+                transition: 1s 0.1s
+                flex-grow: 1
 
     .newsletter_row
         width: 100%
@@ -2018,11 +2050,3 @@ $color_green:#00A26A
                             transition: 0.3s
                         & .newsletter_cli i:hover
                             transform: scale(1.2)
-                    // & .newsletter_send.slideIn
-                    //     transition: 1s
-                    //     opacity: 1
-                    //     transform: translateY(0px) 
-                    // & .newsletter_send.slideIn.active
-                    //     transition: 1s
-                    //     opacity: 1
-                    //     transform: translateY(0px) 
