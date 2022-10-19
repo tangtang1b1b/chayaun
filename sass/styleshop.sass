@@ -329,6 +329,12 @@ body
                             transform: rotate(90deg)
                         & #popogo.back
                             transform: rotate(180deg)
+                    & .sert_big_clone.slideIn
+                        transition: 1s
+                        opacity: 0
+                    & .sert_big_clone.slideIn.active
+                        transition: 1s
+                        opacity: 1
                     & .all_type
                         cursor: pointer
                         width: 50%
@@ -343,6 +349,12 @@ body
                             transform: rotate(90deg)
                         & #gogogo.back
                             transform: rotate(180deg)
+                    & .all_type.slideIn
+                        transition: 1s
+                        opacity: 0
+                    & .all_type.slideIn.active
+                        transition: 1s
+                        opacity: 1
                 & .choose_group
                     overflow: scroll
                     box-sizing: border-box

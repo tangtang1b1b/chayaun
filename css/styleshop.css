@@ -401,6 +401,14 @@
   .product_area .container_product_area .content_choose .together .sert_big_clone #popogo.back {
     transform: rotate(180deg);
   }
+  .product_area .container_product_area .content_choose .together .sert_big_clone.slideIn {
+    transition: 1s;
+    opacity: 0;
+  }
+  .product_area .container_product_area .content_choose .together .sert_big_clone.slideIn.active {
+    transition: 1s;
+    opacity: 1;
+  }
   .product_area .container_product_area .content_choose .together .all_type {
     cursor: pointer;
     width: 50%;
@@ -417,6 +425,14 @@
   }
   .product_area .container_product_area .content_choose .together .all_type #gogogo.back {
     transform: rotate(180deg);
+  }
+  .product_area .container_product_area .content_choose .together .all_type.slideIn {
+    transition: 1s;
+    opacity: 0;
+  }
+  .product_area .container_product_area .content_choose .together .all_type.slideIn.active {
+    transition: 1s;
+    opacity: 1;
   }
   .product_area .container_product_area .content_choose .choose_group {
     overflow: scroll;
