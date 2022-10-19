@@ -1617,27 +1617,27 @@
     opacity: 0;
   }
   .flavor_row .flavor_container .flavor_content.slideIn:nth-child(1) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .flavor_row .flavor_container .flavor_content.slideIn:nth-child(2) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .flavor_row .flavor_container .flavor_content.slideIn:nth-child(3) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .flavor_row .flavor_container .flavor_content.slideIn.active:nth-child(1) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 3;
   }
   .flavor_row .flavor_container .flavor_content.slideIn.active:nth-child(2) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 2;
   }
   .flavor_row .flavor_container .flavor_content.slideIn.active:nth-child(3) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .newsletter_row {
@@ -2026,7 +2026,7 @@
   .derivative_row .derivative_inner_box .derivative_container .derivative_group.slideIn {
     transition: 1s;
     opacity: 0;
-    left: -200%;
+    left: -400%;
   }
   .derivative_row .derivative_inner_box .derivative_container .derivative_group.slideIn.active {
     transition: 1s;
@@ -2244,14 +2244,14 @@
     margin-top: 40px;
   }
   .artisan_row .artisan_inner_box .artisan_container h3.slideIn {
-    transition: 1s;
+    transition: 0.5s;
     opacity: 0;
-    transform: translateY(-70%);
+    transform: translateX(-25%) translateY(-50%);
   }
   .artisan_row .artisan_inner_box .artisan_container h3.slideIn.active {
-    transition: 1s;
+    transition: 0.5s;
     opacity: 1;
-    transform: translateY(-90%);
+    transform: translateX(-25%) translateY(-90%);
   }
   .artisan_row .artisan_inner_box .artisan_container p {
     display: none;
@@ -2481,27 +2481,27 @@
     opacity: 0;
   }
   .flavor_row .flavor_container .flavor_content.slideIn:nth-child(1) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .flavor_row .flavor_container .flavor_content.slideIn:nth-child(2) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .flavor_row .flavor_container .flavor_content.slideIn:nth-child(3) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .flavor_row .flavor_container .flavor_content.slideIn.active:nth-child(1) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 3;
   }
   .flavor_row .flavor_container .flavor_content.slideIn.active:nth-child(2) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 2;
   }
   .flavor_row .flavor_container .flavor_content.slideIn.active:nth-child(3) {
-    transition: 1s 0.1s;
+    transition: 1s;
     flex-grow: 1;
   }
   .newsletter_row {

@@ -3,6 +3,30 @@ $color_white:#f7f7f7
 $color_black:#333
 $color_gray:#666
 $color_green:#00A26A
+@mixin slideIn()
+    transform: translateX(50px)
+    opacity: 0
+    transition: 1s
+@mixin active()
+    transform: translateX(0px)
+    opacity: 1
+    transition: 1s
+@mixin zoomOut()
+    transform: translateX(-50px)
+    opacity: 0
+    transition: 1s
+@mixin zoomIn()
+    transform: translateX(0px)
+    opacity: 1
+    transition: 1s
+@mixin zoomDown()
+    transform: translateY(50px)
+    opacity: 0
+    transition: 0.5s
+@mixin zoomUp()
+    transform: translateY(0px)
+    opacity: 1
+    transition: 0.5s
 
 *
     // outline: solid 1px
@@ -37,6 +61,10 @@ $color_green:#00A26A
                     min-width: 200px
                     width: 20%
                     object-fit: cover
+                & img.slideIn
+                    +zoomOut
+                & img.slideIn.active
+                    +zoomIn
                 & a 
                     width: 70%
                     display: flex
@@ -45,6 +73,9 @@ $color_green:#00A26A
                         width: 950px
                         padding: 10px
                         margin-left: 20px
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-evenly
                         & .paper,.detial_content,.detial_date
                             padding: 10px 0px
                         & .paper
@@ -76,6 +107,10 @@ $color_green:#00A26A
                             padding: 5px
                             text-align: center
                             border-radius: 20px 
+                    & .detial.slideIn 
+                        +slideIn
+                    & .detial.slideIn.active
+                        +active
                     
                 
 
@@ -109,6 +144,14 @@ $color_green:#00A26A
                         min-width: 0px
                         width: 100%
                         object-fit: cover
+                    & img.slideIn
+                        transform: translateX(0px)
+                        opacity: 1
+                        transition: 1s
+                    & img.slideIn.active
+                        transform: translateX(0px)
+                        opacity: 1
+                        transition: 1s
                     & a 
                         box-shadow: 0px 2px 5px 0px rgb(51 51 51 / 30%)
                         border-radius: 0px 0px 10px 10px 
@@ -140,6 +183,18 @@ $color_green:#00A26A
                                 font-weight: bold
                                 font-size: 14px
                                 color: $color_black
+                        & .detial.slideIn
+                            transform: translateX(0px)
+                            opacity: 1
+                            transition: 1s
+                        & .detial.slideIn.active
+                            transform: translateX(0px)
+                            opacity: 1
+                            transition: 1s
+                & .content_news_list.slideIn
+                    +zoomDown
+                & .content_news_list.slideIn.active
+                    +zoomUp 
 
 @media screen and (max-width:768px)
     .news
