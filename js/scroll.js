@@ -1,13 +1,13 @@
 
 // if($(window).width()>1024){
 
-    let oth = $(window).innerHeight();
+    let othh = $(window).innerHeight();
     $(window).scroll(function(){
-        let sct = $(this).scrollTop();
-        let all = sct+oth;
-        let oft = $("#special_group").offset().top;
+        let sctt = $(this).scrollTop();
+        let alll = sctt+othh;
+        let oftt = $("#special_group").offset().top;
         
-        if(all > oft){
+        if(alll > oftt){
             $("#special_group").animate({left:"40%"},1200);
         }
         // const els = document.querySelectorAll(".slideIn");
@@ -20,11 +20,5 @@
         //         console.log('invisibe',x)
         //     }
         // })
-        $(".slideIn").each(function(){
-            let sld = $(this).offset().top;
-            if(all > sld){
-                $(this).addClass("active");
-            }
-        });
     });
 // }
