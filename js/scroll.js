@@ -6,6 +6,7 @@
         let sct = $(this).scrollTop();
         let all = sct+oth;
         let oft = $("#special_group").offset().top;
+        
         if(all > oft){
             $("#special_group").animate({left:"40%"},1200);
         }
