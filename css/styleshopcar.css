@@ -77,6 +77,7 @@
 }
 .checkit .container_check .content_check .smallcontent .smallname {
   width: 25%;
+  text-align: center;
 }
 .checkit .container_check .content_check .productcontent {
   display: flex;
@@ -85,7 +86,36 @@
   padding: 10px 15px;
 }
 .checkit .container_check .content_check .productcontent .productname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 25%;
+  font-size: 16px;
+}
+.checkit .container_check .content_check .productcontent .productname.proprice::before, .checkit .container_check .content_check .productcontent .productname.producttotal::before {
+  content: "$";
+}
+.checkit .container_check .content_check .productcontent #math {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+.checkit .container_check .content_check .productcontent #math .minus, .checkit .container_check .content_check .productcontent #math .plus {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: 0.3s;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #00A26A;
+  color: #f7f7f7;
+  border-radius: 5px;
+}
+.checkit .container_check .content_check .productcontent #math .minus:hover, .checkit .container_check .content_check .productcontent #math .plus:hover {
+  background-color: #333;
 }
 .checkit .container_check .half_check {
   padding: 10px 15px;
@@ -361,6 +391,7 @@
   .checkit .container_check .content_check .productcontent .productname {
     text-align: center;
     width: 25%;
+    font-size: 12px;
   }
   .checkit .container_check .content_check .productcontent .productname:nth-child(2) {
     display: none;

@@ -76,13 +76,36 @@ $color_green:#00A26A
                 display: flex
                 & .smallname
                     width: 25%
+                    text-align: center
             & .productcontent
                 display: flex
                 border: solid 1px #ccc
                 border-bottom: none
                 padding: 10px 15px
                 & .productname
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    text-align: center
                     width: 25%
+                    font-size: 16px
+                & .productname.proprice::before, .productname.producttotal::before
+                    content:"$"
+                & #math
+                    display: flex
+                    justify-content: space-evenly
+                    font-size: 16px
+                    & .minus,.plus
+                        user-select: none
+                        transition: 0.3s
+                        padding: 5px 10px
+                        font-size: 20px
+                        cursor: pointer
+                        background-color: $color_green
+                        color: $color_white
+                        border-radius: 5px
+                        &:hover
+                            background-color: $color_black
         & .half_check
             padding: 10px 15px
             border: solid 1px #ccc
@@ -311,6 +334,7 @@ $color_green:#00A26A
                     & .productname
                         text-align: center
                         width: 25%
+                        font-size: 12px
                     & .productname:nth-child(2)
                         display: none
             & .half_check
