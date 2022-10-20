@@ -77,6 +77,9 @@ $color_green:#00A26A
                 & .smallname
                     width: 25%
                     text-align: center
+                & .smallname:nth-child(5)
+                    cursor: pointer
+                    width: 10%
             & .productcontent
                 display: flex
                 border: solid 1px #ccc
@@ -89,6 +92,12 @@ $color_green:#00A26A
                     text-align: center
                     width: 25%
                     font-size: 16px
+                & .productname:nth-child(5)
+                    transition:0.3s
+                    cursor: pointer
+                    width: 10%    
+                    &:hover 
+                        color: $color_green
                 & .productname.proprice::before, .productname.producttotal::before
                     content:"NT$"
                 & #math
@@ -338,10 +347,13 @@ $color_green:#00A26A
                     
                     & .smallname
                         text-align: center
-                        width: 25%
+                        width: 30%
                         font-size: 12px
+                        text-align: center
                     & .smallname:nth-child(2)
                         display: none
+                    & .smallname:nth-child(5)
+                        width: 10%
 
                 & .productcontent
                     display: flex
@@ -352,12 +364,18 @@ $color_green:#00A26A
                     padding: 10px 15px
                     & .productname
                         text-align: center
-                        width: 25%
+                        width: 30%
                         font-size: 12px
                     & .productname:nth-child(2)
                         display: none
+                    & .productname:nth-child(5)
+                        width: 10%
             & #sure
-                padding: 10px 15px
+                margin: auto
+                font-size: 12px
+                padding: 10px 10px
+                margin: 10px
+                border-radius: 5px
             & .half_check
                 padding: 10px 15px
                 border: solid 1px #ccc
