@@ -47,12 +47,12 @@ for(let j = 0;j<plus.length;j++){
         }
     });
 }
-for(let x = 0;x<del.length;x++){
-    del[x].addEventListener("click",()=>{
-        mainclass[x].style.display = "none";
-    });
-    // console.log(mainclass.length)
-}
+// for(let x = 0;x<del.length;x++){
+//     del[x].addEventListener("click",()=>{
+//         // console.log(mainclass);
+//         mainclass.splice(1,1);
+//     });
+// }
 
 
 
