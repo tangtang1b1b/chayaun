@@ -90,7 +90,7 @@ $color_green:#00A26A
                     width: 25%
                     font-size: 16px
                 & .productname.proprice::before, .productname.producttotal::before
-                    content:"$"
+                    content:"NT$"
                 & #math
                     display: flex
                     justify-content: space-evenly
@@ -104,8 +104,21 @@ $color_green:#00A26A
                         background-color: $color_green
                         color: $color_white
                         border-radius: 5px
-                        &:hover
+                        &:active
                             background-color: $color_black
+        & #sure
+            display: flex
+            justify-content: center
+            background-color: $color_main
+            color: $color_white
+            border: solid 1px #ccc
+            border-bottom: none
+            cursor: pointer
+            padding: 15px 15px
+            &:hover
+                filter: brightness(1.1)
+            &:active
+                filter: brightness(0.9)
         & .half_check
             padding: 10px 15px
             border: solid 1px #ccc
@@ -233,6 +246,12 @@ $color_green:#00A26A
                     margin-bottom: 15px
                     display: flex
                     justify-content: space-between
+                    & #bgtotal
+                        font-size: 22px
+                        color: $color_green
+                    & #smtotal::before,#bgtotal::before
+                        content: "NT$"
+
             & .buybtn
                 width: 100%
                 background-color: $color_green
@@ -337,6 +356,8 @@ $color_green:#00A26A
                         font-size: 12px
                     & .productname:nth-child(2)
                         display: none
+            & #sure
+                padding: 10px 15px
             & .half_check
                 padding: 10px 15px
                 border: solid 1px #ccc
