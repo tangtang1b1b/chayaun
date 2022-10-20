@@ -1,3 +1,13 @@
+window.addEventListener("load",()=>{
+    setTimeout(()=>{
+        document.getElementById("loading").style.animation="opa 1s 0.5s both linear";
+    },3000);
+    setTimeout(()=>{
+        document.getElementById("loading").remove();
+    },4500)
+        
+});
+
 $(window).on("scroll",function(e){
     if($(window).scrollTop()>0){
         $(".nav_box").css("box-shadow","0px 0px 5px 0px #BBB");

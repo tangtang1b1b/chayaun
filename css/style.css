@@ -1,3 +1,74 @@
+#loading {
+  border-radius: 100%;
+  z-index: 101;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200vw;
+  height: 200vh;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+text {
+  position: fixed;
+  font-size: 120px;
+  font-weight: 500;
+  stroke-width: 1px;
+  stroke: #2A9D8F;
+  stroke-dasharray: 500;
+  -webkit-animation: svg 3s both linear;
+          animation: svg 3s both linear;
+}
+
+@-webkit-keyframes svg {
+  0% {
+    fill: transparent;
+    stroke-dashoffset: 500;
+  }
+  80% {
+    fill: transparent;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: #2A9D8F;
+  }
+}
+
+@keyframes svg {
+  0% {
+    fill: transparent;
+    stroke-dashoffset: 500;
+  }
+  80% {
+    fill: transparent;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill: #2A9D8F;
+  }
+}
+@-webkit-keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .banner_row {
   width: 100%;
   overflow: hidden;
