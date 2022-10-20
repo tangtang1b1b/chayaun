@@ -6,6 +6,8 @@ $color_green:#00A26A
 
 *
     // outline: solid 1px
+body,html
+    scroll-behavior: smooth
 
 .imgcar
     background-color: $color_white
@@ -117,6 +119,8 @@ $color_green:#00A26A
                         border-radius: 5px
                         &:active
                             background-color: $color_black
+        & a 
+            text-decoration: none
         & #sure
             display: flex
             justify-content: center
@@ -382,6 +386,7 @@ $color_green:#00A26A
                 padding: 10px 10px
                 margin: 10px
                 border-radius: 5px
+
             & .half_check
                 padding: 10px 15px
                 border: solid 1px #ccc
@@ -412,7 +417,7 @@ $color_green:#00A26A
                         font-size: 12px
                         padding: 5px 0px
                         width: 150px
-                        background-color: #ffe8c6           
+                        background-color: #ffe8c6
     .morebuyit
         padding-top: 30px
         width: 100%

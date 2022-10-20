@@ -1,3 +1,7 @@
+body, html {
+  scroll-behavior: smooth;
+}
+
 .imgcar {
   background-color: #f7f7f7;
   padding-top: 160px;
@@ -131,6 +135,9 @@
 }
 .checkit .container_check .content_check .productcontent #math .minus:active, .checkit .container_check .content_check .productcontent #math .plus:active {
   background-color: #333;
+}
+.checkit .container_check a {
+  text-decoration: none;
 }
 .checkit .container_check #sure {
   display: flex;
