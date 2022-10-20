@@ -25,16 +25,16 @@ let halfbuy=0;
         });
     }
     
-    document.getElementById("sure").addEventListener("click",function(){
-        buy =0;
-        for(let a=0;a<prodtotal.length;a++){
-            buy += parseInt(prodtotal[a].innerText);
-        }
-        document.getElementById("smtotal").innerText = buy;
-        halfbuy = buy - (buy*0.1)
-        document.getElementById("bgtotal").innerText = halfbuy;
-        // console.log(buy)
-    });
+document.getElementById("sure").addEventListener("click",function(){
+    buy =0;
+    for(let a=0;a<prodtotal.length;a++){
+        buy += parseInt(prodtotal[a].innerText);
+    }
+    document.getElementById("smtotal").innerText = buy;
+    halfbuy = buy - (buy*0.1)
+    document.getElementById("bgtotal").innerText = halfbuy;
+    // console.log(buy)
+});
 
     for(let j = 0;j<plus.length;j++){
         minus[j].addEventListener("click",()=>{
