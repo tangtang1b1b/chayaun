@@ -97,6 +97,9 @@
   width: 25%;
   font-size: 16px;
 }
+.checkit .container_check .content_check .productcontent .productname img {
+  width: 50%;
+}
 .checkit .container_check .content_check .productcontent .productname:nth-child(5) {
   transition: 0.3s;
   cursor: pointer;
