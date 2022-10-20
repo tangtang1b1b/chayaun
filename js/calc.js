@@ -21,12 +21,24 @@ for(let i = 0;i<plus.length;i++){
         //     var gg = prodtotal[i].innerText;
         //     console.log(gg)
         // }
-        
+        sure();
         // console.log(document.getElementById("smtotal").innerText)
     });
 }
     
-document.getElementById("sure").addEventListener("click",()=>{
+// document.getElementById("sure").addEventListener("click",()=>{
+//     buy =0;
+//     for(let a=0;a<prodtotal.length;a++){
+//         buy += parseInt(prodtotal[a].innerText);
+//     }
+//     document.getElementById("smtotal").innerText = buy;
+//     halfbuy = buy - (buy*0.1)
+//     document.getElementById("bgtotal").innerText = halfbuy;
+//     // console.log(buy)
+// });
+
+//瘋狂刷新金額之術
+function sure(){
     buy =0;
     for(let a=0;a<prodtotal.length;a++){
         buy += parseInt(prodtotal[a].innerText);
@@ -34,9 +46,8 @@ document.getElementById("sure").addEventListener("click",()=>{
     document.getElementById("smtotal").innerText = buy;
     halfbuy = buy - (buy*0.1)
     document.getElementById("bgtotal").innerText = halfbuy;
-    // console.log(buy)
-});
-
+}
+sure();
 for(let j = 0;j<plus.length;j++){
     minus[j].addEventListener("click",()=>{
         if((number[j].innerText)>1){
@@ -44,15 +55,20 @@ for(let j = 0;j<plus.length;j++){
             total = prodprice[j].innerText * number[j].innerText;
             // console.log(prodprice[i].innerText * number[i].innerText)
             prodtotal[j].innerText = total;
+            sure();
         }
     });
 }
-// for(let x = 0;x<del.length;x++){
-//     del[x].addEventListener("click",()=>{
-//         // console.log(mainclass);
-//         mainclass.splice(1,1);
-//     });
-// }
+
+for(let x = 0;x<del.length;x++){
+    del[x].addEventListener("click",()=>{
+        // console.log(mainclass);
+        // mainclass.splice(1,1);
+        mainclass[x].remove("productcontent");
+        prodtotal[x].innerText="0";
+        sure();
+    });
+}
 
 
 

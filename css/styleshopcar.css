@@ -141,6 +141,7 @@
   border-bottom: none;
   cursor: pointer;
   padding: 15px 15px;
+  font-weight: bold;
 }
 .checkit .container_check #sure:hover {
   filter: brightness(1.1);
@@ -434,6 +435,9 @@
     text-align: center;
     width: 30%;
     font-size: 12px;
+  }
+  .checkit .container_check .content_check .productcontent #math .minus, .checkit .container_check .content_check .productcontent #math .plus {
+    padding: 2px 6px;
   }
   .checkit .container_check .content_check .productcontent .productname:nth-child(2) {
     display: none;
