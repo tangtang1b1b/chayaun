@@ -118,7 +118,7 @@ body {
 
 .product_menu .container_menu .menu_group .menu_list a img.slideIn {
   transition: 0.5s;
-  transform: translate(-20px, 80px) rotate(-15deg) scale(1);
+  transform: translate(-20px, 40px) rotate(-5deg) scale(1);
   opacity: 0;
 }
 
