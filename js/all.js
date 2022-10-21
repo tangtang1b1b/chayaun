@@ -1,6 +1,6 @@
 window.addEventListener("load",()=>{
     if($(window).width()<1025){
-        document.querySelector("#loading").style.display="none";
+        document.getElementById("loading").style.display="none";
     }
     setTimeout(()=>{
         document.getElementById("loading").style.animation="opa 0.5s 0.5s both ease-in";
