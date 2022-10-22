@@ -3,35 +3,40 @@ let itemlist = document.querySelector("#productcontent_group");
 // let gg = JSON.parse(localStorage.getItem(fuck));
 // let fuck = ["img/22.jpg","850","850"];
 // let fuck = [{picuuuu:"img/22.jpg"},{priceee:"850"},{piccc:"850"}];
-let fuck = JSON.parse(localStorage.getItem(fuck)) || [];
+// let fuck = JSON.parse(localStorage.getItem(fuck));
+let fuck=[];
 let picuu;
 let prlce;
 let pic;
 if(shopcar){
-    shopcar.addEventListener("click",() => {
-        picuu = $(".shopcar").data("picuu");
-        prlce = $(".shopcar").data("price");
-        pic = $(".shopcar").data("pic");
-        // console.log(picuu);
-        fuck = [{ picuuuu: picuu }, { priceee: `${prlce}` }, { piccc: `${pic}`}];
+    $(".shopcar").click(function(){
+        
+        picuu = $(this).data("picuu");
+        prlce = $(this).data("price");
+        pic = $(this).data("pic");
+        fuck.push({ picuuuu: `${picuu}` ,  priceee: `${prlce}` ,  piccc: `${pic}`}); 
         localStorage.setItem("fuck", JSON.stringify(fuck));
         showla();
+        // console.log(fuck);
     });
 }
-// localStorage.setItem("fuck",JSON.stringify(fuck));
-// JSON.parse(localStorage.getItem(fuck));
 
 
+let myclass = `<li class='productcontent'><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del'>x</div></li>`;
 
-let myclass = "<li class='productcontent'><div class='productname'><img src='{img}'></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del'>x</div></li>"
 function showla(){
-    JSON.parse(localStorage.getItem(fuck));
-    let myclassnew = myclass.replace("{img}",fuck[0]['picuuuu'])
-                            .replace("{price}",fuck[1]['priceee'])
-                            .replace("{total}",fuck[2]['piccc'])
- 
-                                    
-    $(itemlist).append(myclassnew);
-    console.log(fuck[0]['picuuuu'])
+    let newfuck = JSON.parse(localStorage.getItem("fuck"));
+    for(let i = 0;i<newfuck.length;i++){
+        hahadead = newfuck[i];
+
+    
+        let myclassnew = myclass.replace("{img}",hahadead.picuuuu)
+                                .replace("{price}",hahadead.priceee)
+                                .replace("{total}",hahadead.piccc)
+                                
+        $(itemlist).append(myclassnew);
+        console.log(newfuck)
+    }
 }
-// showla();
+// console.log(JSON.parse(localStorage.getItem("fuck")))
+showla();
