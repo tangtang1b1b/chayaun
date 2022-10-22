@@ -1,15 +1,4 @@
-window.addEventListener("load",()=>{
-    if($(window).width()<1025){
-        document.getElementById("loading").style.display="none";
-    }
-    setTimeout(()=>{
-        document.getElementById("loading").style.animation="opa 0.5s 0.5s both ease-in";
-    },3000);
-    setTimeout(()=>{
-        document.getElementById("loading").remove();
-    },4000)
 
-});
 
 $(window).on("scroll",function(e){
     if($(window).scrollTop()>0){

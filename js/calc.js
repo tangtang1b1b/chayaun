@@ -6,7 +6,7 @@ let minus = document.querySelectorAll(".minus");
 let number = document.querySelectorAll(".number");
 let prodprice = document.querySelectorAll(".proprice")
 let prodtotal = document.querySelectorAll(".producttotal")
-let del = document.querySelectorAll(".del");
+// let del = document.querySelectorAll(".del");
 let mainclass = document.querySelectorAll(".productcontent")
 let buy = 0;
 let halfbuy=0;
@@ -60,15 +60,15 @@ for(let j = 0;j<plus.length;j++){
     });
 }
 
-for(let x = 0;x<del.length;x++){
-    del[x].addEventListener("click",()=>{
-        // console.log(mainclass);
-        // mainclass.splice(1,1);
-        mainclass[x].remove("productcontent");
-        prodtotal[x].innerText="0";
-        sure();
-    });
-}
+// for(let x = 0;x<del.length;x++){
+//     del[x].addEventListener("click",()=>{
+//         // console.log(mainclass);
+//         // mainclass.splice(1,1);
+//         mainclass[x].remove("productcontent");
+//         prodtotal[x].innerText="0";
+//         sure();
+//     });
+// }
 
 
 
