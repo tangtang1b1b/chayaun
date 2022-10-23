@@ -82,6 +82,8 @@
   width: 100%;
 }
 .load_area .container_load .content_load .load_write .write_group .write_list:nth-child(6) {
+  display: flex;
+  align-items: center;
   margin-bottom: 0;
   justify-content: flex-start;
 }
