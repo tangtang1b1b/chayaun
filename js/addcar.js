@@ -25,13 +25,19 @@ $(".shopcar").click(function(){
     // console.log($(this).data("num"));
 });
 
-
+function alertTest() {
+    Swal.fire(
+        "成功加入購物車",
+        "ʕ •ᴥ•ʔ",
+        'success',
+    );
+}
 
 function updata(){
     fuck.push({ picuuuu: `${picuu}` ,  priceee: `${prlce}` ,  piccc: `${pic}`}); 
     localStorage.setItem("fuck", JSON.stringify(fuck));
     showla();
-    alert("已加入購物車")
+    alertTest();
 }
 
 let myclass = `<li class='productcontent'><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del' data-del={del}>x</div></li>`;
