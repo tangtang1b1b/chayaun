@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, html {
   scroll-behavior: smooth;
 }
@@ -113,7 +114,7 @@ body, html {
   color: #00A26A;
 }
 .checkit .container_check .content_check .productcontent .productname.proprice::before, .checkit .container_check .content_check .productcontent .productname.producttotal::before {
-  content: "NT$";
+  content: "NT$ ";
 }
 .checkit .container_check .content_check .productcontent #math {
   display: flex;
@@ -320,7 +321,7 @@ body, html {
   color: #00A26A;
 }
 .payfunc .container_payfunc .content_payinfo .total_info .total #smtotal::before, .payfunc .container_payfunc .content_payinfo .total_info .total #bgtotal::before {
-  content: "NT$";
+  content: "NT$ ";
 }
 .payfunc .container_payfunc .content_payinfo .buybtn {
   width: 100%;

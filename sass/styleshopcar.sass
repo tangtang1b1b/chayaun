@@ -102,8 +102,8 @@ body,html
                     width: 10%    
                     &:hover 
                         color: $color_green
-                & .productname.proprice::before, .productname.producttotal::before
-                    content:"NT$"
+                & .productname.proprice::before,.productname.producttotal::before
+                    content: "NT$\00A0"
                 & #math
                     display: flex
                     justify-content: space-evenly
@@ -266,7 +266,7 @@ body,html
                         font-size: 22px
                         color: $color_green
                     & #smtotal::before,#bgtotal::before
-                        content: "NT$"
+                        content: "NT$\00A0"
 
             & .buybtn
                 width: 100%
