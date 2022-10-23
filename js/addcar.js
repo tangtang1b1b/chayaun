@@ -11,20 +11,34 @@ let prlce;
 let pic;
 
 $(".shopcar").click(function(){
-    
     picuu = $(this).data("picuu");
     prlce = $(this).data("price");
     pic = $(this).data("pic");
-    fuck.push({ picuuuu: `${picuu}` ,  priceee: `${prlce}` ,  piccc: `${pic}`}); 
-    localStorage.setItem("fuck", JSON.stringify(fuck));
-    showla();
+    updata();
+    // picuu = $(this).data("picuu");
+    // prlce = $(this).data("price");
+    // pic = $(this).data("pic");
+    // fuck.push({ picuuuu: `${picuu}` ,  priceee: `${prlce}` ,  piccc: `${pic}`}); 
+    // localStorage.setItem("fuck", JSON.stringify(fuck));
+    // showla();
+    // alert("已加入購物車")
     // console.log($(this).data("num"));
 });
 
-let myclass = `<li class='productcontent' data-del={del}><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del'>x</div></li>`;
+
+
+function updata(){
+    fuck.push({ picuuuu: `${picuu}` ,  priceee: `${prlce}` ,  piccc: `${pic}`}); 
+    localStorage.setItem("fuck", JSON.stringify(fuck));
+    showla();
+    alert("已加入購物車")
+}
+
+let myclass = `<li class='productcontent'><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del' data-del={del}>x</div></li>`;
 
 
 function showla(){
+    
     for(let i = 0;i<fuck.length;i++){
         newfuck = fuck[i];
         // $("li").click(function(){
@@ -38,16 +52,10 @@ function showla(){
                                 .replace("{del}",i)
                                 
         $(itemlist).append(myclassnew);
-        // console.log(newfuck)
+        $(".del").click(function(){
+            localStorage.removeItem("fuck");
+        });
     }
 }
 // console.log(JSON.parse(localStorage.getItem("fuck")))
 showla();
-// $(".del").click(function(){
-//     dele($(this).data("del"));
-// });
-// function dele(i){
-//     fuck.splice(i,1);
-//     showla();
-// }
-console.log(fuck);
