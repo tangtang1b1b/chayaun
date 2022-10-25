@@ -81,7 +81,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   position: relative;
   max-width: 1200px;
   margin: auto;
-  font-size: 48px;
+  font-size: 36px;
   color: #333;
   padding-left: 40px;
 }
@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
   content: "";
   position: absolute;
   width: 30px;
-  height: 15px;
+  height: 5px;
   background-color: #00A26A;
   top: 0;
   bottom: 0;
@@ -532,7 +532,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     background-color: #f7f7f7;
   }
   .title_area h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
   .nav_box .nav_bar .list_group .list_item:nth-child(1) {
     display: block;
@@ -668,7 +668,7 @@ body::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
     background-color: #f7f7f7;
   }
   .title_area h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
   .foot_row {
     position: static;

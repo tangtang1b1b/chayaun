@@ -117,9 +117,12 @@ body {
   margin: 30px 0px 0px;
   padding: 10px;
   font-size: 26px;
+  line-height: 25px;
 }
 .shopinner .container_inner .content_shopping .title_cont {
   padding: 10px;
+  line-height: 22px;
+  letter-spacing: 1px;
 }
 .shopinner .container_inner .content_shopping .title_cont p {
   margin-bottom: 20px;

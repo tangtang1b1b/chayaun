@@ -70,6 +70,7 @@
 }
 .news .container_news .content_news_group .content_news_list a .detial .paper {
   letter-spacing: 1px;
+  line-height: 22px;
   color: #333;
   font-size: 20px;
   transition: 0.3s;
