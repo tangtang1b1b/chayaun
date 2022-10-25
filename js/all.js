@@ -1,5 +1,4 @@
-
-
+// --導覽陰影+至頂
 $(window).on("scroll",function(e){
     if($(window).scrollTop()>0){
         $(".nav_box").css("box-shadow","0px 0px 5px 0px #BBB");
@@ -12,6 +11,7 @@ $(window).on("scroll",function(e){
     }
 });
 
+// --桌機分類
 let i=0;
 $("#choosesubcribe").click(function(){
     if($(window).width()>1024){
@@ -35,6 +35,7 @@ $("#choosemonth").click(function(){
     }
 });
 
+// --註冊登入
 $("#dun").click(function(){
     $(".choosewhat p").text("使用LINE登入");
     $(".choosewhat p + p").text("使用FaceBook登入");
@@ -56,7 +57,7 @@ $("#ju").click(function(){
     $(".forget").css("display","none")
 });
 
-
+// --漢堡
 let j =0;
 $(".hamber").click(function(){
     j++;
@@ -80,6 +81,7 @@ $(".hamber").click(function(){
     }
 });
 
+// --手機商城分類
 let check = true;
 let check2 = true;
 $(".all_type").click(function(){
@@ -105,6 +107,7 @@ $(".sert_big_clone").click(function(){
     }
 });
 
+// --職人分頁
 let sect = $(".product_menu");
 let prod = $(".type_list .a");
 // console.log($(".product_menu"));
@@ -130,15 +133,7 @@ $(".type_list").click(function(){
     $(prod[i]).addClass("bc");
 });
 
-// $(window).scroll(function(evt){
-//     let oth = $(window).innerHeight();
-//     let sct = $(window).scrollTop();
-//     let oft = $("#special_group").offset().top;
-//     if(oth+sct > oft){
-//       $("#special_group").addClass(".slide_left");
-//     }
-//   });
-  
+// --算物件高  
 let oth = $(window).innerHeight();
 $(window).scroll(function(){
     let sct = $(this).scrollTop();

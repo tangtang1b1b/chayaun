@@ -9,7 +9,7 @@ let fuck=JSON.parse(localStorage.getItem("fuck"))||[];
 let picuu;
 let prlce;
 let pic;
-
+//--取值
 $(".shopcar").click(function(){
     picuu = $(this).data("picuu");
     prlce = $(this).data("price");
@@ -32,17 +32,17 @@ function alertTest() {
         'success',
     );
 }
-
+// --推值
 function updata(){
     fuck.push({ picuuuu: `${picuu}` ,  priceee: `${prlce}` ,  piccc: `${pic}`}); 
     localStorage.setItem("fuck", JSON.stringify(fuck));
     showla();
     alertTest();
 }
-
+// --宣告html
 let myclass = `<li class='productcontent'><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del' data-del={del}>x</div></li>`;
 
-
+// --替換值
 function showla(){
     
     for(let i = 0;i<fuck.length;i++){
