@@ -17,7 +17,7 @@ function checkCook() {
         document.getElementById("loading").style.display="none";
     }else{
         window.addEventListener("load",()=>{
-            document.cookie = "chayuan = haha";
+            document.cookie = `chayuan = haha; max-age = ${10*60}`;
             if($(window).width()<1025){
                 document.getElementById("loading").style.display="none";
             }
