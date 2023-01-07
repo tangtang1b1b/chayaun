@@ -9,6 +9,7 @@ let fuck=JSON.parse(localStorage.getItem("fuck"))||[];
 let picuu;
 let prlce;
 let pic;
+let dell;
 //--取值
 $(".shopcar").click(function(){
     picuu = $(this).data("picuu");
@@ -40,13 +41,14 @@ function updata(){
     alertTest();
 }
 // --宣告html
-let myclass = `<li class='productcontent'><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div class='productname del' data-del={del}>x</div></li>`;
+let myclass = `<li class='productcontent'><div class='productname'><img src={img}></div><div class='productname proprice'>{price}</div><div id='math' class='productname'><div class='minus'>-</div><div class='number'>1</div><div class='plus'>+</div></div><div class='productname producttotal'>{total}</div><div id='{id}' class='productname del' data-del={del}>x</div></li>`;
 
 // --替換值
 function showla(){
     
     for(let i = 0;i<fuck.length;i++){
         newfuck = fuck[i];
+        dell = "del"+i;
         // $("li").click(function(){
         //     fuck = newfuck.splice(0,1);
         //     localStorage.setItem("fuck", JSON.stringify(fuck));
@@ -56,12 +58,17 @@ function showla(){
                                 .replace("{price}",newfuck.priceee)
                                 .replace("{total}",newfuck.piccc)
                                 .replace("{del}",i)
+                                .replace("{id}",dell)
                                 
         $(itemlist).append(myclassnew);
-        $(".del").click(function(){
-            localStorage.removeItem("fuck");
+        $("#"+dell).click(function(){
+            remv($(this).attr('data-del'));
+            // localStorage.removeItem("fuck");
         });
     }
 }
-// console.log(JSON.parse(localStorage.getItem("fuck")))
 showla();
+function remv(id){
+    fuck.splice(id,1);
+    localStorage.setItem("fuck",JSON.stringify(fuck));
+}
