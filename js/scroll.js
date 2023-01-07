@@ -4,7 +4,7 @@ function getcook(user){
     let allcook = document.cookie.split(";");
     // console.log(document.cookie)
     for(let pp=0;pp<allcook.length;pp++){
-        let maincook = allcook[i].split("=");
+        let maincook = allcook[pp].split("=");
         if(user == maincook[0]){
             return maincook[1];
         }
